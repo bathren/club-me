@@ -6,3 +6,8 @@
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 }
+
+.span button
+{
+	margin: 100px;
+}
