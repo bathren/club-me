@@ -64,12 +64,13 @@
     <div class="container">
       <div class="col-md-6">
       <div class="spin" id="show">
+        <!-- Could use better images with similar dimensions for a better look. May require photo manipulation -->
         {{#each matchme}}
         <div class = "row-fluid">
           <img src = "images/{{image}}" style="max-height:300px;" class = "img">
-          <span><button type = "submit" id = "disL" class = "btn-danger" onClick = "return false;" >Dislike</button></span>
-          <span><button type = "submit" id = "indiff" class = "msgBtn" onClick = "return false;" >Indifferent</button></span>
-          <span><button type = "submit" id = "like" class = "btn-success" onClick = "return false;" >Like</button></span>
+          <span><button type = "submit" id = "disL" class = "btn-danger" style="margin:40px" onClick = "return false;" >Dislike</button></span>
+          <span><button type = "submit" id = "indif" class = "msgBtn" style="margin:40px" onClick = "return false;" >Indifferent</button></span>
+          <span><button type = "submit" id = "like" class = "btn-success" style="margin:40px" onClick = "return false;" >Like</button></span>
           <div> {{name}} </div>
         </div>
         {{/each}}
@@ -77,7 +78,7 @@
       </div>
     </div>
 
-
+    <p><a href="message">Messages (temp location)</a></p>
     <p><a href="/">Back &raquo;</a></p>
 </div>
 

@@ -24,6 +24,7 @@ var ttv = require('./routes/ttv');
 var nmotion = require('./routes/nmotion');
 var indprofile = require('./routes/indprofile');
 var signup = require('./routes/signup');
+var message = require('./routes/message');
 // Example route
 // var user = require('./routes/user');
 
@@ -66,7 +67,7 @@ app.get('/indprofile', indprofile.view);
 app.get('/signup', signup.view);
 app.get('/ifc', ifc.view);
 app.get('/phc', phc.view);
-
+app.get('/message', message.view);
 // Example route
 // app.get('/users', user.list);
 
