@@ -1,19 +1,7 @@
+// Get all of our friend data
+var data = require('../matchme.json');
 
 exports.view = function(req, res){
-  res.render('matchme', {
-    'matchme': [
-    { 'name': 'Running',
-      'image': 'Running.jpg',
-      'id': 'match1'
-    },
-    { 'name': 'Video Games',
-      'image': 'VideoGames.jpg',
-      'id': 'match2'
-    },
-    { 'name': 'Alcohol',
-      'image': 'Alcohol.jpg',
-      'id': 'match3'
-    },
-    ]
-  });
+  console.log(data);
+  res.render('matchme', data);
 }

@@ -6,10 +6,17 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
-var handlebars = require('express3-handlebars')
+var handlebars = require('express3-handlebars');
+var mongoose = require('mongoose');
 
 var index = require('./routes/index');
 var project = require('./routes/project');
+
+var local_database_name = 'clubme';
+var local_database_uri  = 'mongodb://localhost/' + local_database_name
+var database_uri = process.env.MONGOLAB_URI || local_database_uri
+mongoose.connect(database_uri);
+
 var matchme = require('./routes/matchme');
 var settings = require('./routes/settings');
 var myclubs = require('./routes/myclubs');
@@ -24,7 +31,9 @@ var ttv = require('./routes/ttv');
 var nmotion = require('./routes/nmotion');
 var indprofile = require('./routes/indprofile');
 var signup = require('./routes/signup');
-var message = require('./routes/message');
+var club = require('./routes/club');
+
+var searchresults = require('./routes/searchresults');
 // Example route
 // var user = require('./routes/user');
 
@@ -44,6 +53,9 @@ app.use(express.cookieParser('Intro HCI secret key'));
 app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
+app.post('/user/login', isignup.checkUser);
+app.post('/user/new', isignup.addUser);
+//app.post('/club/new', csignup.addClub);
 
 // development only
 if ('development' == app.get('env')) {
@@ -67,7 +79,11 @@ app.get('/indprofile', indprofile.view);
 app.get('/signup', signup.view);
 app.get('/ifc', ifc.view);
 app.get('/phc', phc.view);
-app.get('/message', message.view);
+//app.get('/club', club.view);
+app.get('/clubs/dance/:id/:name', club.view);
+
+app.get('/searchresults', searchresults.view);
+
 // Example route
 // app.get('/users', user.list);
 

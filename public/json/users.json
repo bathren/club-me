@@ -1,0 +1,44 @@
+{
+	"users": [
+		{
+			"name": "johndoe@ucsd.edu",
+			"password": "password"
+		},
+		{
+			"name": "gg@ucsd.edu",
+			"password": "gg"
+		},
+		{
+			"name": "xyz@ucsd.edu",
+			"password": "xyz"
+		},
+		{
+			"name": "abc",
+			"password": "abc"
+		},
+		{
+			"name": "user",
+			"password": ""
+		}
+	]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

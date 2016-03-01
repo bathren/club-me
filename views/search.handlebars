@@ -1,223 +1,189 @@
-<!doctype html>
+  <!doctype html>
 
-<html>
-<head>
-  <title>clubMe</title> 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="//code.jquery.com/jquery.min.js"></script>
-  <link href="/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-  <link href="/css/introHCI.css" rel="stylesheet">
-  <link href='https://code.cdn.mozilla.net/fonts/fira.css' rel='stylesheet' type='text/css' />
-  <!-- this is a comment in HTML -->
+  <html>
+  <head>
+    <title>clubMe</title> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="/css/introHCI.css" rel="stylesheet">
+    <link href='https://code.cdn.mozilla.net/fonts/fira.css' rel='stylesheet' type='text/css' />
+    <!-- this is a comment in HTML -->
 
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-      <![endif]-->         
-  </head>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->         
+      </head>
 
-  <body>
-
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="slide-nav">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-toggle"> 
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="col-m-6" id="imaginary_container" href="#"> 
-            <div class="input-group stylish-input-group">
-              <input type="text" class="form-control"  placeholder="Search" >
-              <span class="input-group-addon">
-                <button type="submit">
-                  <span class="glyphicon glyphicon-search"></span>
-                </button>  
-              </span>
-            </div>
-          </a>
+      <body>
+        
+        <div id="page-content">
+          
+          <!-- h1 through h6 are headers. The higher the number, the smaller the header -->
+          <!-- p means paragraph -->
         </div>
-        <div id="slidemenu">
-          <ul class="nav navbar-nav">
-            <li><a href="indprofile">Profile</a></li>
-            <li><a href="matchme">Match Me</a></li>
-            <li><a href="myclubs">My Clubs</a></li>
-            <li class="active"><a href="#">Club Search</a></li>
-            <li><a href="settings">Help</a></li>
-        </div>
-      </div>
-    </div>
-
-    <div id="page-content">
-      
-      <!-- h1 through h6 are headers. The higher the number, the smaller the header -->
-      <!-- p means paragraph -->
-    </div>
-    
+        
         <div class="styled">
-            <h2>Categories</h2>
-            <div class="drawers-wrapper">
+          <h2>Categories</h2>
+          <div class="drawers-wrapper" style="text-align:center">
 
-                <ul id="page_nav">
+            <ul id="page_nav">
 
-                    <ul class="drawers" style="list-style-type:none">
-                        <li class="drawer">
-                            <a id="rptCategories_HyperLink2" href="RdOnlyList.aspx"><h4 class="drawer-handle" >Show All&nbsp;(514)</h4></a>
-                        </li>
+              <ul class="drawers" style="list-style-type:none">
+                
+                <li class="drawer">
 
-                        <li class="drawer">
+                  <a id="rptCategories_HyperLink1_0" href="RdOnlyList.aspx?frmFocus=1"><h4 class="drawer-handle" >Academic&nbsp;(54)</h4></a>
 
-                            <a id="rptCategories_HyperLink1_0" href="RdOnlyList.aspx?frmFocus=1"><h4 class="drawer-handle" >Academic&nbsp;(54)</h4></a>
 
+                </li>
+                
+                <li class="drawer">
 
-                        </li>
-                        
-                        <li class="drawer">
+                  <a id="rptCategories_HyperLink1_1" href="RdOnlyList.aspx?frmFocus=5"><h4 class="drawer-handle" >Co-Ops/Enterprise&nbsp;(4)</h4></a>
 
-                            <a id="rptCategories_HyperLink1_1" href="RdOnlyList.aspx?frmFocus=5"><h4 class="drawer-handle" >Co-Ops/Enterprise&nbsp;(4)</h4></a>
 
+                </li>
+                
+                <li class="drawer">
 
-                        </li>
-                        
-                        <li class="drawer">
+                  <a id="rptCategories_HyperLink1_2" href="RdOnlyList.aspx?frmFocus=3"><h4 class="drawer-handle" >Cultural&nbsp;(59)</h4></a>
 
-                            <a id="rptCategories_HyperLink1_2" href="RdOnlyList.aspx?frmFocus=3"><h4 class="drawer-handle" >Cultural&nbsp;(59)</h4></a>
 
+                </li>
+                
+                <li class="drawer">
 
-                        </li>
-                        
-                        <li class="drawer">
+                  <a href="dance"><h4 class="drawer-handle" >Dance&nbsp;(19)</h4></a>
 
-                            <a href="dance"><h4 class="drawer-handle" >Dance&nbsp;(19)</h4></a>
 
+                </li>
+                
+                <li class="drawer">
 
-                        </li>
-                        
-                        <li class="drawer">
+                  <a id="rptCategories_HyperLink1_4" href="RdOnlyList.aspx?frmFocus=6"><h4 class="drawer-handle" >Educational&nbsp;(35)</h4></a>
 
-                            <a id="rptCategories_HyperLink1_4" href="RdOnlyList.aspx?frmFocus=6"><h4 class="drawer-handle" >Educational&nbsp;(35)</h4></a>
 
+                </li>
+                
+                <li class="drawer">
 
-                        </li>
-                        
-                        <li class="drawer">
+                  <a id="rptCategories_HyperLink1_5" href="RdOnlyList.aspx?frmFocus=8"><h4 class="drawer-handle" >Health Professions&nbsp;(25)</h4></a>
 
-                            <a id="rptCategories_HyperLink1_5" href="RdOnlyList.aspx?frmFocus=8"><h4 class="drawer-handle" >Health Professions&nbsp;(25)</h4></a>
 
+                </li>
+                
+                <li class="drawer">
 
-                        </li>
-                        
-                        <li class="drawer">
+                  <a href="ifc"><h4 class="drawer-handle" >Interfraternity Council (IFC)&nbsp;(14)</h4></a>
 
-                            <a href="ifc"><h4 class="drawer-handle" >Interfraternity Council (IFC)&nbsp;(14)</h4></a>
 
+                </li>
+                
+                <li class="drawer">
 
-                        </li>
-                        
-                        <li class="drawer">
+                  <a id="rptCategories_HyperLink1_7" href="RdOnlyList.aspx?frmFocus=21"><h4 class="drawer-handle" >Martial Arts&nbsp;(8)</h4></a>
 
-                            <a id="rptCategories_HyperLink1_7" href="RdOnlyList.aspx?frmFocus=21"><h4 class="drawer-handle" >Martial Arts&nbsp;(8)</h4></a>
 
+                </li>
+                
+                <li class="drawer">
 
-                        </li>
-                        
-                        <li class="drawer">
+                  <a id="rptCategories_HyperLink1_8" href="RdOnlyList.aspx?frmFocus=11"><h4 class="drawer-handle" >Media&nbsp;(14)</h4></a>
 
-                            <a id="rptCategories_HyperLink1_8" href="RdOnlyList.aspx?frmFocus=11"><h4 class="drawer-handle" >Media&nbsp;(14)</h4></a>
 
+                </li>
+                
+                <li class="drawer">
 
-                        </li>
-                        
-                        <li class="drawer">
+                  <a id="rptCategories_HyperLink1_9" href="RdOnlyList.aspx?frmFocus=7"><h4 class="drawer-handle" >Multi-Cultural Greek Council (MCG) - Fraternity&nbsp;(9)</h4></a>
 
-                            <a id="rptCategories_HyperLink1_9" href="RdOnlyList.aspx?frmFocus=7"><h4 class="drawer-handle" >Multi-Cultural Greek Council (MCG) - Fraternity&nbsp;(9)</h4></a>
 
+                </li>
+                
+                <li class="drawer">
 
-                        </li>
-                        
-                        <li class="drawer">
+                  <a id="rptCategories_HyperLink1_10" href="RdOnlyList.aspx?frmFocus=25"><h4 class="drawer-handle" >Multi-Cultural Greek Council (MCG) - Sorority&nbsp;(7)</h4></a>
 
-                            <a id="rptCategories_HyperLink1_10" href="RdOnlyList.aspx?frmFocus=25"><h4 class="drawer-handle" >Multi-Cultural Greek Council (MCG) - Sorority&nbsp;(7)</h4></a>
 
+                </li>
+                
+                <li class="drawer">
 
-                        </li>
-                        
-                        <li class="drawer">
+                  <a href="phc"><h4 class="drawer-handle" >Panhellenic&nbsp;(14)</h4></a>
 
-                            <a href="phc"><h4 class="drawer-handle" >Panhellenic&nbsp;(14)</h4></a>
 
+                </li>
+                
+                <li class="drawer">
 
-                        </li>
-                        
-                        <li class="drawer">
+                  <a id="rptCategories_HyperLink1_12" href="RdOnlyList.aspx?frmFocus=15"><h4 class="drawer-handle" >Political&nbsp;(7)</h4></a>
 
-                            <a id="rptCategories_HyperLink1_12" href="RdOnlyList.aspx?frmFocus=15"><h4 class="drawer-handle" >Political&nbsp;(7)</h4></a>
 
+                </li>
+                
+                <li class="drawer">
 
-                        </li>
-                        
-                        <li class="drawer">
+                  <a id="rptCategories_HyperLink1_13" href="RdOnlyList.aspx?frmFocus=16"><h4 class="drawer-handle" >Pre-Professional&nbsp;(50)</h4></a>
 
-                            <a id="rptCategories_HyperLink1_13" href="RdOnlyList.aspx?frmFocus=16"><h4 class="drawer-handle" >Pre-Professional&nbsp;(50)</h4></a>
 
+                </li>
+                
+                <li class="drawer">
 
-                        </li>
-                        
-                        <li class="drawer">
+                  <a id="rptCategories_HyperLink1_14" href="RdOnlyList.aspx?frmFocus=17"><h4 class="drawer-handle" >Recreation (Must Utilize Campus Recreation Facilities)&nbsp;</h4></a>
 
-                            <a id="rptCategories_HyperLink1_14" href="RdOnlyList.aspx?frmFocus=17"><h4 class="drawer-handle" >Recreation (Must Utilize Campus Recreation Facilities)&nbsp;</h4></a>
 
+                </li>
+                
+                <li class="drawer">
 
-                        </li>
-                        
-                        <li class="drawer">
+                  <a id="rptCategories_HyperLink1_15" href="RdOnlyList.aspx?frmFocus=19"><h4 class="drawer-handle" >Service&nbsp;(76)</h4></a>
 
-                            <a id="rptCategories_HyperLink1_15" href="RdOnlyList.aspx?frmFocus=19"><h4 class="drawer-handle" >Service&nbsp;(76)</h4></a>
 
+                </li>
+                
+                <li class="drawer">
 
-                        </li>
-                        
-                        <li class="drawer">
+                  <a id="rptCategories_HyperLink1_16" href="RdOnlyList.aspx?frmFocus=20"><h4 class="drawer-handle" >Social&nbsp;(68)</h4></a>
 
-                            <a id="rptCategories_HyperLink1_16" href="RdOnlyList.aspx?frmFocus=20"><h4 class="drawer-handle" >Social&nbsp;(68)</h4></a>
 
+                </li>
+                
+                <li class="drawer">
 
-                        </li>
-                        
-                        <li class="drawer">
+                  <a id="rptCategories_HyperLink1_17" href="RdOnlyList.aspx?frmFocus=18"><h4 class="drawer-handle" >Spiritual&nbsp;(44)</h4></a>
 
-                            <a id="rptCategories_HyperLink1_17" href="RdOnlyList.aspx?frmFocus=18"><h4 class="drawer-handle" >Spiritual&nbsp;(44)</h4></a>
 
+                </li>
+                
+                <li class="drawer">
 
-                        </li>
-                        
-                        <li class="drawer">
+                  <a id="rptCategories_HyperLink1_18" href="RdOnlyList.aspx?frmFocus=13"><h4 class="drawer-handle" >Student Affirmative Action Committee(SAAC)&nbsp;(7)</h4></a>
 
-                            <a id="rptCategories_HyperLink1_18" href="RdOnlyList.aspx?frmFocus=13"><h4 class="drawer-handle" >Student Affirmative Action Committee(SAAC)&nbsp;(7)</h4></a>
 
+                </li>
+                
+              </ul>
 
-                        </li>
-                        
-                    </ul>
 
 
+            </ul>  
+          </div> 
+          <!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
+          <!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
+          <!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
+          
+      <!--<div>
+        <img class="img-responsive" id="help" src="images/help.png"/></div> 
+      </div>-->
+    </div>
+  </body>
 
-                </ul>  
-            </div> 
-      <!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
-      <!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
-      <!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
-      
-    <!--<div>
-      <img class="img-responsive" id="help" src="images/help.png"/></div> 
-    </div>-->
-</div>
-</body>
-
-<script src="/js/searchbar.js"></script>
-</html>
+  <script src="/js/searchbar.js"></script>
+  </html>

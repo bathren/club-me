@@ -2,6 +2,26 @@
 
 $(document).ready(function () {
 
+  var sbar = 
+   '<nav id="navbar" class="navbar navbar-inverse navbar-fixed-bottom">' +
+  '<div class="container-fluid">' +
+   '<div class="navbar-header">' +
+    '</div>' +
+    '<ul class="list-inline" class="nav navbar-nav" class="navi">' +
+      '<li  style="display:inline"><a href="/indprofile">Profile</a></li>'+
+      '<li  style="display:inline"><a href="/myclubs">My Clubs</a></li>'+
+      '<li  style="display:inline"><a href="/matchme">Match Me</a></li>'+
+      '<li  style="display:inline" class="active"><a href="/search">Categories</a></li>'+
+      '<li  style="display:inline"><a href="/#">Logout</a></li>'+ 
+    '</ul>'+
+  '</div>' +
+'</nav>';
+
+    console.log(sbar);
+
+    $("body").prepend(sbar);
+
+
     //stick in the fixed 100% height behind the navbar but don't wrap it
     $('#slide-nav.navbar-inverse').after($('<div class="inverse" id="navbar-height-col"></div>'));
     

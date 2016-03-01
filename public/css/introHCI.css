@@ -16,136 +16,15 @@ body.slide-active {
     padding-top: 0
 }
 
-
-
-/* put toggle bars on the left :: not using button */
-#slide-nav .navbar-toggle {
-    cursor: pointer;
-    position: relative;
-    line-height: 0;
-    float: left;
-    margin: 0;
-    width: 30px;
-    height: 40px;
-    padding: 10px 0 0 0;
-    border: 0;
-    background: transparent;
+#navbar {
+    bottom: ;
 }
-/* icon bar prettyup - optional */
-#slide-nav .navbar-toggle > .icon-bar {
-    width: 100%;
-    display: block;
-    height: 3px;
-    margin: 5px 0 0 0;
-}
-#slide-nav .navbar-toggle.slide-active .icon-bar {
-    background: orange
-}
-.navbar-header {
-    position: relative;
-}
-/* un fix the navbar when active so that all the menu items are accessible */
-.navbar.navbar-fixed-top.slide-active {
-    position: relative
-}
-/* screw writing importants and shit, just stick it in max width since these classes are not shared between sizes */
-@media (max-width:767px) { 
-     #slide-nav .container {
-         margin: 0!important;
-         padding: 0!important;
-      height:100%;
-     }
-     #slide-nav .navbar-header {
-         margin: 0 auto;
-         padding: 0 15px;
-     }
-     #slide-nav .navbar.slide-active {
-         position: absolute;
-         width: 80%;
-         top: -1px;
-         z-index: 1000;
-     }
-     #slide-nav #slidemenu {
-         background: #f7f7f7;
-         left: -100%;
-         width: 80%;
-         min-width: 0;
-         position: absolute;
-         padding-left: 0;
-         z-index: 2;
-         top: 9.3px;
-         margin: 0;
-     }
-     #slide-nav #slidemenu .navbar-nav {
-         min-width: 0;
-         width: 100%;
-         margin: 0;
-     }
-     #slide-nav #slidemenu .navbar-nav .dropdown-menu li a {
-         min-width: 0;
-         width: 80%;
-         white-space: normal;
-     }
-     #slide-nav {
-         border-top: 0
-     }
-     #slide-nav.navbar-inverse #slidemenu {
-         background: #333;
-     }
-     /* this is behind the navigation but the navigation is not inside it so that the navigation is accessible and scrolls*/
-     #navbar-height-col {
-         position: fixed;
-         top: 0;
-         height: 100%;
-         bottom:0;
-         width: 80%;
-         left: -80%;
-         background: #f7f7f7;
-     }
-     #navbar-height-col.inverse {
-         background: #333;
-         z-index: 1;
-         border: 0;
-     }
-     #slide-nav .navbar-form {
-         width: 100%;
-         margin: 8px 0;
-         text-align: center;
-         overflow: hidden;
-         /*fast clearfixer*/
-     }
-     #slide-nav .navbar-form .form-control {
-         text-align: center
-     }
-     #slide-nav .navbar-form .btn {
-         width: 100%
-     }
-}
-@media (min-width:768px) { 
-     #page-content {
-         left: 0!important
-     }
-     .navbar.navbar-fixed-top.slide-active {
-         position: fixed
-     }
-     .navbar-header {
-         left: 0!important
-     }
+.navbar-header li{
+    padding: 2rem;
 }
 
-
-
-
-
-/* applies to anything of class "example-class-selector" */
-.example-class-selector {
-	margin-top: 2em;
-}
-
-/* applies to any <p> descendants of an element of class "example-class-selector" */
-.example-class-selector p {
-	/* Colors are in hexadecimal: http://www.colorpicker.com/ */	
-	color: #CC00AA;
+.navi {
+   padding-top: 5rem;
 }
 
 body {
@@ -167,13 +46,20 @@ body {
 }
 
 #name {
-     font-size: 50px; 
+     margin-top: 2rem;
+     font-size: 3rem; 
      display: block;
 }
 #info {
-     font-size: 1rem;
+     font-size: 1.5rem;
      text-align: center;
      display: block;
+}
+
+#descrip {
+    padding: 1.2rem;
+    text-align: left;
+    text-indent: 2rem;
 }
 
 #profile {
@@ -296,7 +182,7 @@ h4{
      margin-left: 55px;
 }
 .drawerz {
-     font-size: 1.5rem;
+     font-size: 1.2rem;
      margin-left: 10px;
 }
 
@@ -306,11 +192,12 @@ h4{
 
 
 .drawer-handle {
+     text-align: center;
      margin-left: -25px;
      margin-right: 20px;
-     border-radius: 10px;
      border: 1px solid #545154;
      padding:10px;
+     opacity: 0.8;
      background: rgba(33,33,33,1);
 background: -moz-linear-gradient(top, rgba(33,33,33,1) 0%, rgba(41,41,41,1) 12%, rgba(46,46,46,1) 41%, rgba(33,33,33,1) 66%, rgba(13,13,13,1) 91%, rgba(8,8,8,1) 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(33,33,33,1)), color-stop(12%, rgba(41,41,41,1)), color-stop(41%, rgba(46,46,46,1)), color-stop(66%, rgba(33,33,33,1)), color-stop(91%, rgba(13,13,13,1)), color-stop(100%, rgba(8,8,8,1)));
@@ -382,3 +269,100 @@ h3 {
 .add_field_button {
     margin-left: -13rem;
 }
+
+.glyphicon.glyphicon-remove-sign, .glyphicon.glyphicon-thumbs-up  {
+    font-size: 3rem;
+}
+
+.glyphicon.glyphicon-minus {
+    font-size: 2rem;
+}
+
+
+#remove-slide {
+    width: 60px;
+    height:60px;
+    background: #ffba01;
+    border-radius: 20px;
+}
+
+#indifferent {
+    width: 40px;
+    height:40px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+#like {
+    width: 60px;
+    height:60px;
+    background: #5fd1d1;
+    border-radius: 20px;
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Pacifico'), url('http://themes.googleusercontent.com/font?kit=fKnfV28XkldRW297cFLeqfesZW2xOQ-xsNqO47m55DA') format('truetype');
+}
+body {
+    text-align: center;
+}
+
+#button {
+    display: inline-block;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow:    0 8px 0 #31373a, 0 15px 20px rgba(0, 0, 0, .35);
+    -moz-box-shadow: 0 8px 0 #31373a, 0 15px 20px rgba(0, 0, 0, .35);
+    box-shadow: 0 8px 0 #31373a, 0 15px 20px rgba(0, 0, 0, .35);
+    -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+    -moz-transition: -moz-box-shadow .1s ease-in-out;
+    -o-transition: -o-box-shadow .1s ease-in-out;
+    transition: box-shadow .1s ease-in-out;
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+#button span {
+    display: inline-block;
+    padding: 17px 25px;
+    background-color: #5fd1d1;
+
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
+    -moz-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
+    font-family: 'Pacifico', Arial, sans-serif;
+    line-height: 0.5;
+    text-shadow: 0 -1px 1px rgba(175, 49, 95, .7);
+    -webkit-transition: background-color .2s ease-in-out, -webkit-transform .1s ease-in-out;
+    -moz-transition: background-color .2s ease-in-out, -moz-transform .1s ease-in-out;
+    -o-transition: background-color .2s ease-in-out, -o-transform .1s ease-in-out;
+    transition: background-color .2s ease-in-out, transform .1s ease-in-out;
+}
+
+#button:hover span {
+    background-color: #ffba01;
+    text-shadow: 0 -1px 1px rgba(175, 49, 95, .9), 0 0 5px rgba(255, 255, 255, .8);
+}
+
+#button:active, #button:focus {
+    -webkit-box-shadow:    0 8px 0 #31373a, 0 12px 10px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 8px 0 #31373a, 0 12px 10px rgba(0, 0, 0, .3);
+    box-shadow:    0 8px 0 #31373a, 0 12px 10px rgba(0, 0, 0, .3);
+}
+
+#button:active span {
+    -webkit-transform: translate(0, 4px);
+    -moz-transform: translate(0, 4px);
+    -o-transform: translate(0, 4px);
+    transform: translate(0, 4px);
+}
+
+

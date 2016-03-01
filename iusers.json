@@ -1,0 +1,42 @@
+[
+	{
+		"name": "johndoe@ucsd.edu",
+		"email": "derp@ucsd.edu",
+		"password": "password",
+		"college": "no",
+		"major": "maybe",
+		"grade": "yes"
+	},
+	{
+		"name": "gg@ucsd.edu",
+		"email": "grass@ucsd.edu",
+		"password": "gg",
+		"college": "no",
+		"major": "maybe",
+		"grade": "yes"
+	},
+	{
+		"name": "xyz@ucsd.edu",
+		"email": "abc@ucsd.edu",
+		"password": "xyz",
+		"college": "no",
+		"major": "maybe",
+		"grade": "yes"
+	},
+	{
+		"name": "abc",
+		"email": "xyz@ucsd.edu",
+		"password": "abc",
+		"college": "no",
+		"major": "maybe",
+		"grade": "yes"
+	},
+	{
+		"name": "user",
+		"email": "bing@ucsd.edu",
+		"password": "",
+		"college": "no",
+		"major": "maybe",
+		"grade": "yes"
+	}
+]

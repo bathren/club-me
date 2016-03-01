@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html>
+<head>
+  <title>clubMe</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="/css/introHCI.css" rel="stylesheet">
+  <link href='https://code.cdn.mozilla.net/fonts/fira.css' rel='stylesheet' type='text/css' />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.min.js"></script>
+       
+  </head>
+
+  <body>
+  
+    <div id="page-content">
+
+    </div>
+  
+    
+        <div class="styled">
+              <h2>Dance</h2>
+          </div>
+          {{#each dance}}
+          
+          <div class='ind'>
+                <a href="{{url}}"><img class="thumb" style="vertical-align:middle" src="{{image}}">
+                <span class="drawerz" style="">{{name}}</span></a>
+          </div>
+          {{/each}}
+
+
+    <div>
+      <a href="settings">
+        <img class="img-responsive" id="help" src="images/help.png"/>
+      </a>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+var path_array = window.location.href.split('?q=');
+var query = path_array[path_array.length - 1]
+console.log(path_array);
+console.log(query);
+handlebars.registerHelper('if_eq', function(a, b, opts) {
+    if(a == b) // Or === depending on your needs
+        return opts.fn(this);
+    else
+        return opts.inverse(this);
+});
+/*
+handlebars.registerHelper('if_eq_name', function(a, opts) {
+    if(a == query)
+        return opts.fn(this);
+    else
+        return opts.inverse(this);
+});*/
+</script>
+
+<script src="/js/searchbar.js"></script>
+</html>

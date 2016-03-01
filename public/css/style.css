@@ -163,7 +163,7 @@ input, button {
   -webkit-transition: width 0.3s 0.15s, font-size 0.1s 0.15s;
   transition: width 0.3s 0.15s, font-size 0.1s 0.15s;
 }
-.create{
+.create, .createclub{
   position: relative;
   left: 7.5%;
   width: 85%;
@@ -229,7 +229,7 @@ input, button {
   cursor: pointer;
 }
 
-.app {
+.app, .clubapp{
   overflow: scroll;
   position: absolute;
   top: 0;
@@ -244,7 +244,7 @@ input, button {
   transition: opacity 0.1s, transform 0.3s cubic-bezier(0.68, -0.45, 0.465, 1.25), -webkit-transform 0.3s cubic-bezier(0.68, -0.45, 0.465, 1.25);
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  opacity: 0.9;
+  opacity: 1;
    background: rgba(41,28,2,1);
      background: -moz-linear-gradient(top, rgba(41,28,2,1) 0%, rgba(27,54,109,1) 100%);
      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(41,28,2,1)), color-stop(100%, rgba(27,54,109,1)));
@@ -256,21 +256,21 @@ input, button {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
-.app.active {
+.app.active .clubapp.active {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
-.app.active .app__user-photo {
+.app.active .app__user-photo, .clubapp.active .app__user-photo {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
-.app.active .app__meeting {
+.app.active .app__meeting, .clubapp.active .app__meeting {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
 }
-.app.active .app__logout {
+.app.active .app__logout, .clubapp.active .app__logout  {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
@@ -503,6 +503,8 @@ input, button {
   background: black;
   border: 10px #000;
 }
+
+
 
 /* applies to anything of class "example-class-selector" */
 .example-class-selector {

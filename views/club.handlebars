@@ -1,0 +1,63 @@
+<!doctype html>
+
+<html>
+<head>
+  <title>clubMe</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="/css/introHCI.css" rel="stylesheet">
+  <link href='https://code.cdn.mozilla.net/fonts/fira.css' rel='stylesheet' type='text/css' />
+  
+  <!-- this is a comment in HTML -->
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->         
+  </head>
+
+  <body>
+
+    <div id="page-content">
+      
+      <!-- h1 through h6 are headers. The higher the number, the smaller the header -->
+      <!-- p means paragraph -->
+    </div>
+    <div class="container">
+      <div class="myInfo">
+        <div>
+          <img class="img-responsive" id ="image" src="{{baseUrl}}/{{jsonKey.image}}"/></div>
+          <p id="name">{{jsonKey.name}}</p>
+          <p id="info">{{jsonKey.info}}</p>
+          <div><p id="descrip">{{jsonKey.description}}</p></div>
+          <div>
+        <a href="https://www.facebook.com/NMotion-355529240024/">
+        <img class ="icon" src="{{baseUrl}}/images/facebook.png"/></a>
+        <a href="http://www.youtube.com/user/ucsdnmotion">
+        <img class ="icon"src="{{baseUrl}}/images/youtube.png"/>
+        </a>
+        <a href="search"></a>
+      </div>
+      </div>
+
+        <a href="#" id="button">
+      <span>Bookmark Club</span>
+      </a>
+      
+    
+</div>
+</body>
+<script>
+   $document.getElementById('button').onclick = (function() {
+    e.preventDefault();
+    document.getElementsByTagName('span')[0].innerHTML = 'Success!';
+    return false;
+});
+</script>
+<script src="/js/searchbar.js"></script>
+</html>

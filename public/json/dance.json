@@ -1,0 +1,158 @@
+{
+	"dance": [
+		{
+			"name": "[N]Motion",
+			"image": "images/nmotion.jpg",
+			"url": "clubs/dance",
+			"info": "Dance Team",
+			"description": "[N]Motion is UCSD NSU's modern/hiphop dance team. It was founded by NSU members Julie Zhan and Drew Vo, who had a dream of making a dance team for the Nikkei Student Union. This dream came true with the help of dancer and choreographer Abe Chung of 220. The 14 members of the very first [N]Motion team debuted at NSU's 2009 Culture Show and has since gained recognition from a number of different organizations. Keep a look out for [N]Motion's other performances throughout the year, including Fusion Kick-Off, NSU/JSA Matsuri, and more!"		
+
+		},
+		{
+			"name": "4N01",
+			"image": "images/4no1.jpg",
+			"url": "clubs/dance",
+			"info": "Dance Team",
+			"description": "Established in 2010, 4N01 is UCSD’s only all-female hip hop dance group. Our team is a group of diverse dancers who come from various backgrounds with different skills, talents and experience levels. Our movement aims to represent our love, passion and diversity. We don't focus on how good you are when you start, but how hard you work to get better."
+		},
+		{
+			"name": "Argentine Tango Club",
+			"image": "images/argtango.jpg",
+			"url": "clubs/dance",
+			"info": "Dance Team",
+			"description": "The Argentine Tango Club is a student-run, non-profit organization. Our aim is to create a friendly atmosphere to promote and encourage Argentine tango in the San Diego area and especially at UCSD. For this purpose, our organization has a synergistic involvement with the San Diego tango community, which includes the following activities: a weekly practica and hosting events such as workshops and milongas."			
+		},
+		{
+			"name": "Ascension",
+			"image": "images/ascension.png",
+			"url": "clubs/dance",
+			"info": "Dance Team",
+			"description": "Ascension UCSD was established in 1999 as UC San Diego Chinese American Student Association's (CASA) dance team. Initially the team was created for the purpose of competing in the new competition All Cal, where dance teams from each UC's Chinese association would battle. Since then, Ascension has grown from a small group of students to a well known and highly talented troupe of dancers. Learning from and helping one another, the team works extremely hard to build each other up for the common goal of success and friendship. Ascension is proud to be comprised of all UCSD students, they perform at various functions around campus and the San Diego area, as well as compete in various competitions around Southern California."			
+		},
+		{
+			"name": "Ballet Folklorico- La Joya de Mexico",
+			"image": "images/folklorico.jpg",
+			"url": "clubs/dance",
+			"info": "Dance Team",
+			"description": "We are a recreational club at UCSD, focused on expressing the art of Mexican Folkloric dance. No experience is necessary to join!"
+		},
+		{
+			"name": "Body Rock",
+			"image": "images/bodyrock.jpg",
+			"url": "clubs/dance",
+			"info": "Dance Team",
+			"description": "BodyRock strives to create a community for bboys and bgirls at UCSD to connect and practice together. We perform on campus and also battle at local jams. But most importantly we dance, hang out, and just have fun together!"	
+		},
+		{
+			"name": "Chinese Dance Association",
+			"image": "images/cda.jpg",
+			"url": "clubs/dance",
+			"info": "Dance Team",
+			"description": "UCSD Chinese Dance Association is a non-profit dance team founded by students who wanted to perform Chinese traditional dance. Our group practices a variety of dances, from traditional forms to a fusion of Chinese and Western dance styles. Our members range from newcomers to experienced dancers, so we welcome all who are interested in dance. Through our performances, we hope to promote greater diversity and appreciation of Chinese culture."				
+		},
+		{
+			"name": "Da Real Punjabiz",
+			"image": "images/drp.jpg",
+			"url": "clubs/dance",
+			"info": "Dance Team",
+			"description": "Da Real Punjabiz stormed the bhangra scene and quickly became one of the most revered co-ed teams in California. Known for bringing fusion and creativity to its performances, DRP has become an icon of originality all over the country. In the 15 years since DRP was formed, the team has performed at numerous competitions all over the Unites States and Canada including Boston Bhangra, Bruin Bhangra, Dhol Di Awaz, VIBC, So-Cal Bhangra, and Best of the Best. Placing at many competitions, DRP has raised awareness of Punjabi culture not only in Southern California, but all over the United States and North America. Through hard work, dedication, and determination, Da Real Punjabiz hope to continue to spread their love and respect for bhangra for years to come."		
+		},
+		{
+			"name": "Finesse Dance Company",
+			"image": "images/finesse.jpg",
+			"url": "clubs/dance",
+			"info": "Dance Team",
+			"description": "Finesse Dance Company is an all female contemporary-based dance company at UC San Diego. Our purpose is to provide an outlet for dancers who come to college seeking to continue their passion for dance."			
+		},
+		{
+			"name": "Kidz Next Door",
+			"image": "images/knd.jpg",
+			"url": "clubs/dance",
+			"info": "Dance Team",
+			"description": "Established in 2014, Kidz Next Door is an exhibition hip-hop dance team based in UCSD and the San Diego area. Created with the purpose to inspire others in the dance community, the team spreads their passion for dance through performances and workshops. Although the team’s focus is built around the style of hip hop, many diverse styles and backgrounds are represented through the individual dancers. The Kidz Next Door Leadership pushes the team members to grow not only as dancers but as a family, encouraging them to respect one another as well as the community around them."		
+		},
+		{
+			"name": "KOTX",
+			"image": "images/kotx.jpg",
+			"url": "clubs/dance",
+			"info": "Dance Team",
+			"description": "KOTX is a K-pop dance team that entertains and spreads Korean culture through K-pop. Creating a welcoming environment for all K-pop lovers. LET'S GET KOTX!n"		
+		},
+		{
+			"name": "Poptikz",
+			"image": "images/poptikz.jpg",
+			"url": "clubs/dance",
+			"info": "Dance Team",
+			"description": "Providing UCSD and the San Diego community tools for self expression through the art of popping -- a freestyle street dance."		
+		},
+		{
+			"name": "Pushpanjali",
+			"image": "images/pushp.jpg",
+			"url": "clubs/dance",
+			"info": "Dance Team",
+			"description": "Pushpanjali was established at the University of California, San Diego in 2011. As passionate dancers in college, we founded this organization to explore and promote Indian classical dance forms. In order to enrich our knowledge, we practice regularly, attend various dance performances to learn and grow as dancers, take outside dance classes to further our dance knowledge, and put together performances. Our goal is to promote and spread awareness about the ancient art form, Bharatanatyam, to a wider array of audiences as well as educate ourselves and our peers about this exquisite dance style."		
+		},
+		{
+			"name": "Raas Ruckus",
+			"image": "images/raas.jpg",
+			"url": "clubs/dance",
+			"info": "Dance Team",
+			"description": "Founded in 2002, Raas Ruckus is UCSD's premier Garba/Raas Team. Competing in various cities such as Irvine, Boston, Chicago, Washington D.C., and Atlanta, we have been representing UCSD at national inter-collegiate level competitions. Our team members come from all over the country and we come together to keep the traditional dance styles of Garba and Raas alive with a little west coast swag!"		
+		},
+		{
+			"name": "Salsa Club",
+			"image": "images/salsa.png",
+			"url": "clubs/dance",
+			"info": "Dance Team",
+			"description": "The UCSD Salsa Club attempts to bring dance to all members of the UCSD student and faculty community. It's a place where we practice, practice, socialize, relax, and relax some more on the dance floor. Timid about dance, let allow salsa dancing? That's alright- learn moves on our dance floors so you can later bust them out on hot latin club floors."			
+		},
+		{
+			"name": "Sleepless Collective",
+			"image": "images/sleepless.jpg",
+			"url": "clubs/dance",
+			"info": "Dance Team",
+			"description": "Sleepless Collective, established in 2015, was founded by Sheng Poon in an effort to bridge the UCSD and San Diego Dance Community - as well as the Choreography and Freestyle Community. It is a choreography team grounded in Hip Hop foundation that seeks to develop top-level dancers with a humble heart to serve others."			
+		},
+		{
+			"name": "Swing Club",
+			"image": "images/swing.png",
+			"url": "clubs/dance",
+			"info": "Dance Team",
+			"description": "The Swing Club at UCSD is a student-run social dance organization founded by students who have discovered the magic of Lindy Hop and Swing Dancing and who hope to share it amongst the Triton community and the greater San Diego area. We want to introduce newcomers to the swing dance scene, and provide another space for veterans to strut their stuff!"		
+		},
+		{
+			"name": "Triton Twirl Flag Squad",
+			"image": "images/twirl.jpg",
+			"url": "clubs/dance",
+			"info": "Dance Team",
+			"description": "We are a spirited recreational club at UC San Diego! We've have been going strong since 1997, and you can see us around campus performing at basketball games during half time and time outs, on the Midway stage SunGod Festival, and on Admit Day and other college related festivities!"		
+		},
+		{
+			"name": "Zor",
+			"image": "images/zor.jpg",
+			"url": "clubs/dance",
+			"info": "Dance Team",
+			"description": "Zor is a group of talented and driven UCSD students who each bring their unique style and experience together to create an exciting mix of Bollywood and modern dance styles. UCSD Zor wants to keep pushing the boundaries of Bollywood dance, and make it accessible and enjoyable for a national audience. Zor hopes to continue its growth and success in the 2015 - 2016 season, and be a force to reckon with."		
+		}
+	]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

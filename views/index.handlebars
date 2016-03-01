@@ -1,140 +1,179 @@
 <!DOCTYPE html>
 <html >
-  <head>
-    <meta charset="UTF-8">
-    <title>clubMe</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-    <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Open+Sans'>
-    <link rel="stylesheet" href="css/style2.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">      
-    <link href='https://code.cdn.mozilla.net/fonts/fira.css' rel='stylesheet' type='text/css' />
+<head>
+  <meta charset="UTF-8">
+  <title>clubMe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Open+Sans'>
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap-theme.min.css" rel="stylesheet">      
+  <link href='https://code.cdn.mozilla.net/fonts/fira.css' rel='stylesheet' type='text/css' />
+</head>
 
 
-    
-    
-    
-  </head>
+<body>
+    <!--attempt to modularize-->
 
-
-  <body>
-
-    <div class="cont">
-  <div class="demo">
-    <div class="login">
-      <div class="login__check">clubMe</div>
-      <div class="login__form">
-        <div class="login__row">
-          <svg class="login__icon name svg-icon" viewBox="0 0 20 20">
-            <path d="M0,20 a10,8 0 0,1 20,0z M10,0 a4,4 0 0,1 0,8 a4,4 0 0,1 0,-8" />
-          </svg>
-          <input type="text" class="login__input name" placeholder="Username"/>
+  <div class="cont">
+    <div class="demo">
+      <div class="login">
+        <div class="login__check">clubMe</div>
+        <div class="login__form">
+          <div class="login__row">
+            <svg class="login__icon name svg-icon" viewBox="0 0 20 20">
+              <path d="M0,20 a10,8 0 0,1 20,0z M10,0 a4,4 0 0,1 0,8 a4,4 0 0,1 0,-8" />
+            </svg>
+            <input type="text" class="login__input name" name="username" placeholder="Username"/>
+          </div>
+          <div class="login__row">
+            <svg class="login__icon pass svg-icon" viewBox="0 0 20 20">
+              <path d="M0,20 20,20 20,8 0,8z M10,13 10,16z M4,8 a6,8 0 0,1 12,0" />
+            </svg>
+            <input type="password" class="login__input pass" name="password" placeholder="Password"/>
+          <div id="status"></div>
+          </div>
+          <button type="button" class="login__submit" id="login">Sign in</button>
+          <p class="login__signup">Don't have an account? &nbsp;<a class="signup">Sign up</a></p>
         </div>
-        <div class="login__row">
-          <svg class="login__icon pass svg-icon" viewBox="0 0 20 20">
-            <path d="M0,20 20,20 20,8 0,8z M10,13 10,16z M4,8 a6,8 0 0,1 12,0" />
-          </svg>
-          <input type="password" class="login__input pass" placeholder="Password"/>
-        </div>
-      <button type="button" class="login__submit">Sign in</button>
-        <p class="login__signup">Don't have an account? &nbsp;<a class="signup">Sign up</a></p>
       </div>
-    </div>
-     <div class ="sign">
+      <div class ="sign">
 
-  <p id="head">Sign Up</p>
+        <p id="head" style="margin-top:3rem">Sign Up</p>
 
-  <div class="container">
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#tab_a" data-toggle="tab">Individual</a></li>
-  <li><a href="#tab_b" data-toggle="tab">Club</a></li>
-</ul>
-<div class="tab-content">
-        <div class="tab-pane active" id="tab_a">
-          <input type="name" class="register-input" placeholder="Name">
-          <input type="email" class="register-input" placeholder="Email address">
-          <input type="password" class="register-input" placeholder="Password">
-          <input type="college" class="register-input" placeholder="College">
-          <input type="major" class="register-input" placeholder="Major">
-          <input type="grade" class="register-input" placeholder="Grade Level">
+        <div class="container" style="margin-top: 3rem">
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab_a" data-toggle="tab">Individual</a></li>
+            <li><a href="#tab_b" data-toggle="tab">Club</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab_a">
+              <input type="name" class="register-input" placeholder="Name">
+              <input type="email" class="register-input" placeholder="Email address">
+              <input type="password" class="register-input" id = "pass" placeholder="Password">
+              <input type="college" class="register-input" placeholder="College">
+              <input type="major" class="register-input" placeholder="Major">
+              <input type="grade" class="register-input" placeholder="Grade Level">
 
-          <div style="margin-left: 28px" class="fileUpload btn btn-primary">
-            <span>Upload Profile Image</span>
-            <input type="file" class="upload" />
+              <div style="margin-left: 21%" class="fileUpload btn btn-primary">
+                <span>Upload Profile Image</span>
+                <input type="file" class="upload" name = "profile"/>
+              </div>
+              <button type="button" class="create">Create Account</button>
+            </div>
+            <div class="tab-pane" id="tab_b">
+
+              <input type="name" class="register-input" placeholder="Org Title">
+              <input type="email" class="register-input" placeholder="Org Email">
+              <input type="password" class="register-input" placeholder="Password">
+              <div style="margin-left: 25%" class="fileUpload btn btn-primary">
+                <span>Upload Club Logo</span>
+                <input type="file" class="upload" />
+
+              </div>
+              <button type="button" class="createclub">Create Account</button>
+            </div>
+          </div><!-- tab content -->
+        </div><!-- end of container -->
+
+
+
+      </div>
+      <div class="app">
+        <form>
+          <div class="search">
+            <input type="text" class="login__input name" placeholder="Search"/>
+            <span style="float:right; margin-right:15px; opacity: 0.7" class="glyphicon glyphicon-search"></span>
           </div>
+        </form>
+        <div class="app__top">
+          <div class="app__user">
+            <img src="http://ghostlypixels.com/wp-content/themes/illustrate-ghostly/images/profile-pic.png"alt="" class="app__user-photo" />
+            <span class="app__user-notif">1</span>
           </div>
-        <div class="tab-pane" id="tab_b">
-          
-          <input type="name" class="register-input" placeholder="Org Title">
-          <input type="email" class="register-input" placeholder="Org Email">
-          <input type="password" class="register-input" placeholder="Password">
-          <div style="margin-left: 28px" class="fileUpload btn btn-primary">
-            <span>Upload Profile Image</span>
-            <input type="file" class="upload" />
+          <p class="app__hello">John Doe</p>
+          <p id="info">First Year || Revelle || Biology</p>
+          <div style="margin-top: 2rem" class="project" id="{{id}}">
+            <a href="matchme">
+              <img class="app__iconz" src="images/match.png" ... />
+              <p id="categories" class="text-center">Match Me</p>
+            </a>
+            <a href="myclubs">
+              <img class="app__iconz" src="images/roster.png" ... />
+              <p id="categories" class="text-center">My Clubs</p>
+            </a>
+            <a href="search">
+              <img class="app__iconz" src="images/search.png" ... />
+              <p id="categories" class="text-center">Categories</p>
+            </a>
+            <a href="update">
+              <img class="app__iconz" src="images/prof.png" ... />
+              <p id="categories" class="text-center">Update Profile</p>
+            </a>
           </div>
-          
+          <div class="app__logout">
+            <svg class="app__logout-icon svg-icon" viewBox="0 0 20 20">
+              <path d="M6,3 a8,8 0 1,0 8,0 M10,0 10,12"/>
+            </svg>
+          </div>
         </div>
-</div><!-- tab content -->
-</div><!-- end of container -->
-
-  <button type="button" class="login__submit">Create Account</button>
-
-       </div>
-    <div class="app">
-      <form>
-        <div class="search">
-          <input type="text" class="login__input name" placeholder="Search"/>
-           <span style="float:right; margin-right:15px; opacity: 0.7" class="glyphicon glyphicon-search"></span>
-        </div>
-      </form>
-      <div class="app__top">
-      <div class="app__user">
-          <img src="http://ghostlypixels.com/wp-content/themes/illustrate-ghostly/images/profile-pic.png"alt="" class="app__user-photo" />
-          <span class="app__user-notif">1</span>
-        </div>
-        <p class="app__hello">John Doe</p>
-        <p id="info">First Year || Revelle || Biology</p>
-        <div class="project" id="{{id}}">
-          <a href="matchme">
-            <img class="app__iconz" src="images/match.png" ... />
-            <p id="categories" class="text-center">Match Me</p>
-          </a>
+      </div>
+      <div class="clubapp">
+        <form>
+          <div class="search">
+            <input type="text" class="login__input name" placeholder="Search"/>
+            <span style="float:right; margin-right:15px; opacity: 0.7" class="glyphicon glyphicon-search"></span>
+          </div>
+        </form>
+        <div class="app__top">
+          <div class="app__user">
+            <img src="images/nmotion.jpg"alt="" class="app__user-photo" />
+            <span class="app__user-notif">1</span>
+          </div>
+          <p class="app__hello">[N]Motion</p>
+          <p id="info">Dance Team</p>
+          <div class="project" id="{{id}}">
+           
+          <p id="categories" class="text-center">[N]Motion is... dance, passion, friendship, family, expression, creativity, growth, inspiration, and LOVE.</p>
           <a href="myclubs">
-            <img class="app__iconz" src="images/mine.png" ... />
-            <p id="categories" class="text-center">My Clubs</p>
+            <img class="app__iconz" src="images/mine.png"/>
+            <p id="categories" class="text-center">Roster</p>
           </a>
-          <a href="search">
-            <img class="app__iconz" src="images/search.png" ... />
-            <p id="categories" class="text-center">Club Search</p>
+           <a href="messages">
+            <img class="app__iconz" src="images/messages.png"/>
+            <p id="categories" class="text-center">Messages</p>
           </a>
           <a href="update">
-            <img class="app__iconz" src="images/prof.png" ... />
+            <img class="app__iconz" src="images/prof.png"/>
             <p id="categories" class="text-center">Update Profile</p>
           </a>
         </div>
-      <div class="app__logout">
-        <svg class="app__logout-icon svg-icon" viewBox="0 0 20 20">
-          <path d="M6,3 a8,8 0 1,0 8,0 M10,0 10,12"/>
-        </svg>
+        <div class="app__logout">
+          <svg class="app__logout-icon svg-icon" viewBox="0 0 20 20">
+            <path d="M6,3 a8,8 0 1,0 8,0 M10,0 10,12"/>
+          </svg>
+        </div>
       </div>
     </div>
   </div>
 </div>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0-rc2/js/bootstrap.min.js"></script>
-    <script src="js/index.js"></script>
-    <script src="/js/ajaxupload.js" type="text/javascript"></script>
-    <script>
+
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0-rc2/js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+<script src="/js/ajaxupload.js" type="text/javascript"></script>
+<script>
 
 <!--<script>
 $(document).ready(function(){
-    $(".search").click(function(){
-        $(".app__top").fadeTo(0, 0.1);
-    });
+  $(".search").click(function(){
+    $(".app__top").fadeTo(0, 0.1);
+  });
 });
 </script>-->
-    
-    
-  </body>
+
+
+</body>
 </html>

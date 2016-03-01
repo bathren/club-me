@@ -1,62 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="//code.jquery.com/jquery.min.js"></script>
-    <link href="/css/introHCI.css" rel="stylesheet">
-    <link href='https://code.cdn.mozilla.net/fonts/fira.css' rel='stylesheet' type='text/css' />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <link href="/css/introHCI.css" rel="stylesheet">
+  <link href='https://code.cdn.mozilla.net/fonts/fira.css' rel='stylesheet' type='text/css' />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Update Profile</title>
+  <title>Update Profile</title>
 
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body>
-      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="slide-nav">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-toggle"> 
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="col-m-6" id="imaginary_container" href="#"> 
-            <div class="input-group stylish-input-group">
-              <input type="text" class="form-control"  placeholder="Search" >
-              <span class="input-group-addon">
-                <button type="submit">
-                  <span class="glyphicon glyphicon-search"></span>
-                </button>  
-              </span>
-            </div>
-          </a>
-        </div>
-        <div id="slidemenu">
-          <ul class="nav navbar-nav">
-            <li><a href="indprofile">Profile</a></li>
-            <li><a href="matchme">Match Me</a></li>
-            <li><a href="myclubs">My Clubs</a></li>
-            <li><a href="search">Club Search</a></li>
-            <li><a href="settings">Help</a></li> 
-        </div>
-      </div>
-    </div>
+<body>
+  
 
     <div id="update">
       <h1 class="text-center" style="color:white"> Update Profile </h1>
 
       <form class="form-horizontal">
         <div class="form-group">
-          <label style="color:white" for="inputEmail3" class="col-sm-2 control-label">Email</label>
+          <label style="color:white; margin-bottom:0.5rem" for="inputEmail3" class="col-sm-2 control-label">Email</label>
           <div class="col-sm-10">
             <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
           </div>
@@ -69,7 +40,7 @@
 
 
         <div class="form-group">
-          <label style="color:white" for="inputPassword3" class="col-sm-2 control-label">Password</label>
+          <label style="color:white; margin-bottom:0.5rem" for="inputPassword3" class="col-sm-2 control-label">Password</label>
           <div class="col-sm-10">
             <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
           </div>
@@ -87,9 +58,9 @@
 
 
         <div class="form-group">
-          <label style="color:white" for="edit info" class="col-sm-2 control-label">Edit Info</label>
+          <label style="color:white; margin-bottom:0.5rem" for="edit info" class="col-sm-2 control-label">Edit Info</label>
           <div class="col-sm-10">
-            <input type="text" name="Name" class="form-control" id="name" placeholder="Name">
+            <input type="text" name="Name" class="form-control" id="nameentry" placeholder="Name">
           </div>
         </div>
         <div class="form-group">
@@ -105,28 +76,37 @@
         </div>
         <textarea class="form-control" rows="3" placeholder="About me"></textarea>
         
-        <div class="form-group">
+       <div class="form-group">
           <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-default">Change</button>
+            <input style="margin-top: 1.5rem" type="button" class="btn btn-default" value="Change"></input>
           </div>
         </div>
-    </form>
-        <div class="form-group">
-       <button style="float: right" class="add_field_button" class="glyphicon glyphicon-plus">+</button>
+      </form>
+
+      <!-- <div class="form-group">
+          <label style="color:white; margin-left:-1.3rem" for="edit info" class="col-sm-2 control-label">Add Principal Members</label>
+      <div class="input-group">
+
+       <button style="float: right" class="add_field_button" >
+         <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+       </button>
        <div class="input_fields_wrap">
-           <div style="inline-block"><input class="form-control" id="member" type="text" name="mytext[]" placeholder="Principal Member"></div> 
-          </div>
-        </div>
+         <div><input style="border-radius:5px; margin-bottom: 15px" class="form-control" id="member" type="text" name="mytext[]" placeholder="Name">
+         </div> 
+       </div>
+       </div>-->
+
+     </div>
 
 
 
-    </div> <!-- /container -->
+   </div> <!-- /container -->
 
-     
-    <script src="https://code.jquery.com/jquery.js"></script>
 
-    <!--Attempting to implement text grabber -->
-    <script>
+   <script src="https://code.jquery.com/jquery.js"></script>
+
+   <!--Attempting to implement text grabber -->
+   <script>
       //var x = $('input[name="Major"]').val();
       $("form").submit(function (e) {
       //var x = $("form").serializeArray();
@@ -134,89 +114,31 @@
       //console.log(x);
       e.preventDefault();
     });
-    </script>
-    <script>
-$(document).ready(function () {
-
-
-    //stick in the fixed 100% height behind the navbar but don't wrap it
-    $('#slide-nav.navbar-inverse').after($('<div class="inverse" id="navbar-height-col"></div>'));
-    
-    $('#slide-nav.navbar-default').after($('<div id="navbar-height-col"></div>'));  
-
-    // Enter your ids or classes
-    var toggler = '.navbar-toggle';
-    var pagewrapper = '#page-content';
-    var navigationwrapper = '.navbar-header';
-    var menuwidth = '100%'; // the menu inside the slide menu itself
-    var slidewidth = '80%';
-    var menuneg = '-100%';
-    var slideneg = '-80%';
-
-
-    $("#slide-nav").on("click", toggler, function (e) {
-
-      var selected = $(this).hasClass('slide-active');
-
-      $('#slidemenu').stop().animate({
-        left: selected ? menuneg : '0px'
-      });
-
-      $('#navbar-height-col').stop().animate({
-        left: selected ? slideneg : '0px'
-      });
-
-      $(pagewrapper).stop().animate({
-        left: selected ? '0px' : slidewidth
-      });
-
-      $(navigationwrapper).stop().animate({
-        left: selected ? '0px' : slidewidth
-      });
-
-
-      $(this).toggleClass('slide-active', !selected);
-      $('#slidemenu').toggleClass('slide-active');
-
-
-      $('#page-content, .navbar, body, .navbar-header').toggleClass('slide-active');
-
-
-    });
-
-
-    var selected = '#slidemenu, #page-content, body, .navbar, .navbar-header';
-
-
-    $(window).on("resize", function () {
-
-      if ($(window).width() > 767 && $('.navbar-toggle').is(':hidden')) {
-        $(selected).removeClass('slide-active');
-      }
-
-
-    });
-
-});
-</script>
+  </script>
+  <script src="/js/searchbar.js"></script>
 <script>
-$(document).ready(function() {
+  $(document).ready(function() {
     var max_fields      = 10; //maximum input boxes allowed
     var wrapper         = $(".input_fields_wrap"); //Fields wrapper
     var add_button      = $(".add_field_button"); //Add button ID
     
     var x = 1; //initlal text box count
     $(add_button).click(function(e){ //on add input button click
-        e.preventDefault();
+      e.preventDefault();
         if(x < max_fields){ //max input box allowed
             x++; //text box increment
-            $(wrapper).append('<div><input id="member" class="form-control" type="text" name="mytext[]" placeholder="Principal Member"/><a href="#" style="float:right" class="remove_field">      X</a></div>'); //add input box
-        }
-    });
+            $(wrapper).append('<div class=input-group>'+
+              '<input style="border-radius:5px; margin-bottom: 15px" id="member" class="form-control" type="text" name="mytext[]" placeholder="Principal Member"/>'+
+              '<a href="#"  class="remove_field" style="float: right">'+
+              '<button class="remove_field_button"><span class="glyphicon glyphicon-remove" aria-hidden="true">'+
+              '</span></button></a>'+
+              '</div>'); //add input box
+          }
+        });
     
     $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
-        e.preventDefault(); $(this).parent('div').remove(); x--;
+      e.preventDefault(); $(this).parent('div').remove(); x--;
     })
-});</script>
-  </body>
+  });</script>
+</body>
 </html>

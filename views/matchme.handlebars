@@ -7,14 +7,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="//code.jquery.com/jquery.min.js"></script>
-  <link href="/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+
   <link href="/css/introHCI.css" rel="stylesheet">
   <link href='https://code.cdn.mozilla.net/fonts/fira.css' rel='stylesheet' type='text/css' />
 
   <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
   <!-- Add the new slick-theme.css if you want the default styling-->
   <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
   <!-- this is a comment in HTML -->
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -23,63 +24,51 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
       <![endif]-->         
-  </head>
+    </head>
 
-  <body>
+    <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="slide-nav">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-toggle"> 
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="col-m-6" id="imaginary_container" href="#"> 
-            <div class="input-group stylish-input-group">
-              <input type="text" class="form-control"  placeholder="Search" >
-              <span class="input-group-addon">
-                <button type="submit">
-                  <span class="glyphicon glyphicon-search"></span>
-                </button>  
-              </span>
+        <div id="page-content"></div>
+        <span class="pagingInfo"></span>
+        
+        <div class="container">
+          <div class="col-md-6">
+
+            <div class="spin" id="show">
+        <!--<div>
+          <h1>your content1</h1>
+        </div>
+        <div>
+          <h1>your content2</h1>
+        </div>
+        <div>
+          <h1>your content3</h1>
+        </div>-->
+          {{#each match}}
+          <div>
+              <img style="width:300px; height:250px; padding-bottom:2rem" class="img-responsive" src="{{image}}">
+              <span id={{@index}}><p style="font-size:2.2rem">{{name}}</p></span>
+
             </div>
-          </a>
+          {{/each}}
+          </div>
+
+         <div id="yesno"> <!-- Contextual button for informational alert messages -->
+          <button class="glyphicon glyphicon-remove-sign" type="button" class="btn btn-danger" id="remove-slide" ></button>
+
+          <!-- Indicates a dangerous or potentially negative action -->
+          <button class="glyphicon glyphicon-thumbs-up" type="button" class="btn btn-info" id="like"></button>
         </div>
-        <div id="slidemenu">
-          <ul class="nav navbar-nav">
-            <li><a href="/">Profile</a></li>
-            <li class="active"><a href="#">Match Me</a></li>
-            <li><a href="myclubs">My Clubs</a></li>
-            <li><a href="search">Club Search</a></li>
-            <li><a href="settings">Help</a></li>
-        </div>
-      </div>
+       </div>
+    
+    <div style="display:none" id="bookmarked">
+      <h2>It's a Match!</h2>
+      <ul class="bookmarked">
+      </ul>
     </div>
 
-    <div id="page-content"></div>
-
-
-    <div class="container">
-      <div class="col-md-6">
-      <div class="spin" id="show">
-        <!-- Could use better images with similar dimensions for a better look. May require photo manipulation -->
-        {{#each matchme}}
-        <div class = "row-fluid">
-          <img src = "images/{{image}}" style="max-height:300px;" class = "img">
-          <span><button type = "submit" id = "disL" class = "btn-danger" style="margin:40px" onClick = "return false;" >Dislike</button></span>
-          <span><button type = "submit" id = "indif" class = "msgBtn" style="margin:40px" onClick = "return false;" >Indifferent</button></span>
-          <span><button type = "submit" id = "like" class = "btn-success" style="margin:40px" onClick = "return false;" >Like</button></span>
-          <div> {{name}} </div>
-        </div>
-        {{/each}}
-      </div>
-      </div>
     </div>
 
-    <p><a href="message">Messages (temp location)</a></p>
-    <p><a href="/">Back &raquo;</a></p>
 </div>
 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -91,33 +80,7 @@
 </body>
 
 <script src="/js/searchbar.js"></script>
-
-<script>
-'use strict';
-
-// Call this function when the page loads (the "ready" event)
-$(document).ready(function() {
-  initializePage();
-});
-
-/*
- * Function that is called when the document is ready.
- */
-function initializePage() {
-  // add any functionality and listeners you want here
-
-}
-
-$(document).ready(function(){
-  $('.spin').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  });
-}); 
-</script>
+<script src="/js/matchme.js"></script>
 
 </html>
 
