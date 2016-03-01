@@ -1,10 +1,9 @@
-//* this style exists to make it obvious that you've successfully linked
+/* this style exists to make it obvious that you've successfully linked
    the CSS to the page. feel free to remove it once the link is working. */
 body {
      border: 1px dotted gray;
      padding: 20px;
      background-color: #1b366d;
-     font-family: "Fira Sans";
 }
 
 .settings p {
@@ -18,3 +17,4 @@ body {
      width: 10px;
      height: 10px;
 }
+
