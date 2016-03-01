@@ -107,16 +107,14 @@ $(document).ready(function() {
     animating = true;
     var uname = $("input[type=name]").val();
     var email = $("input[type=email").val();
-    var pw = $("input[type=password]").val();
-    var x = document.getElementById("pass").value;
-    console.log(x);
+    var pw = document.getElementById("pass").value;
     var college = $("input[type=college]").val();
     var major = $("input[type=major]").val();
     var grade = $("input[type=grade]").val();
     var json = {
       'name': uname,
       'email': email,
-      'password': x,
+      'password': pw,
       'college': college,
       'major': major,
       'grade': grade
@@ -149,7 +147,15 @@ $(document).ready(function() {
     animating = true;
     var uname = $("input[type=name]").val();
     var email = $("input[type=email").val();
-    var pw = $("input[type=password]").val();
+    var pw = document.getElementById("passw").value;
+    var json = {
+      "clubname": uname,
+      "email": email,
+      "password": pw,
+    };
+    $.post('/club/new', json, function() {
+      window.location.href = '/'; // reload the page
+    });
     var that = this;
     ripple($(that), e);
     $(that).addClass("processing");

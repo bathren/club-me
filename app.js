@@ -54,7 +54,7 @@ app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 app.post('/user/login', isignup.checkUser);
 app.post('/user/new', isignup.addUser);
-//app.post('/club/new', csignup.addClub);
+app.post('/club/new', csignup.addClub);
 
 // development only
 if ('development' == app.get('env')) {
