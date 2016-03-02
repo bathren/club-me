@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="//code.jquery.com/jquery.min.js"></script>
-
+  <link rel="stylesheet" href="css/ind.css">
   <link href="/css/introHCI.css" rel="stylesheet">
   <link href='https://code.cdn.mozilla.net/fonts/fira.css' rel='stylesheet' type='text/css' />
 
@@ -23,59 +23,39 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-      <![endif]-->         
+
+      <![endif]-->    
+
+        <script src="js/prefixfree.min.js"></script>      
     </head>
 
     <body>
 
-        <div id="page-content"></div>
-        <span class="pagingInfo"></span>
-        
-        <div class="container">
-          <div class="col-md-6">
-
-            <div class="spin" id="show">
-        <!--<div>
-          <h1>your content1</h1>
-        </div>
-        <div>
-          <h1>your content2</h1>
-        </div>
-        <div>
-          <h1>your content3</h1>
-        </div>-->
-          {{#each match}}
-          <div>
-              <img style="width:300px; height:250px; padding-bottom:2rem" class="img-responsive" src="{{image}}">
-              <span id={{@index}}><p style="font-size:2.2rem">{{name}}</p></span>
-
-            </div>
-          {{/each}}
-          </div>
-
-         <div id="yesno"> <!-- Contextual button for informational alert messages -->
-          <button class="glyphicon glyphicon-remove-sign" type="button" class="btn btn-danger" id="remove-slide" ></button>
-
-          <!-- Indicates a dangerous or potentially negative action -->
-          <button class="glyphicon glyphicon-thumbs-up" type="button" class="btn btn-info" id="like"></button>
-        </div>
-       </div>
+  <div class="cont">
+    <div class="demo">
+    <div class="login">
+    <div class="app">
+      <div class="app__top">
     
-    <div style="display:none" id="bookmarked">
-      <h2>It's a Match!</h2>
-      <ul class="bookmarked">
-      </ul>
-    </div>
-
-    </div>
-
+        <div id="people"></div>
+    <div id="control">
+      <div class="button no">
+        <a href="#" class="trigger"></a>
+      </div>
+      <div class="button yes">
+        <a href="#" class="trigger"></a>
+      </div>
+  </div>
+ </div>
 </div>
-
+    </div>
+  </div>
+</div>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-<script src="/js/matchme.js"></script>
 
 </body>
 

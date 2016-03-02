@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html>
+<head>
+  <title>clubMe</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="/css/introHCI.css" rel="stylesheet">
+  <link href='https://code.cdn.mozilla.net/fonts/fira.css' rel='stylesheet' type='text/css' />      
+  </head>
+
+  <body>
+        <div id="categories">
+        <div class="styled">
+          <h2>My Clubs</h2>
+           <div id="individual">
+                <a href="ttv"><img class="thumb" src="images/tritontv.jpg">
+                <span class="drawerz" style="">Triton TV</span></a>
+          </div>
+          <div id="individual">
+                <a href="nmotion"><img class="thumb" src="images/nmotion.jpg">
+                <span class="drawerz" style="">[N] Motion</span></a>
+          </div>
+        </div>
+</div>
+</body>
+
+<script src="/js/searchbar.js"></script>
+</html>

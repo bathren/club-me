@@ -1,0 +1,55 @@
+<!doctype html>
+
+<html>
+<head>
+  <title>clubMe</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="/css/introHCI.css" rel="stylesheet">
+  <link href='https://code.cdn.mozilla.net/fonts/fira.css' rel='stylesheet' type='text/css' />
+  <!-- this is a comment in HTML -->
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->         
+  </head>
+
+  <body>
+        <div id="academic">
+        <div class="styled">
+              <h1>Academic</h1>
+          </div>
+          {{#each clubs}}
+          <div class='ind'>
+                <a href="{{url}}/{{@index}}/{{name}}"><img class="thumb" style="vertical-align:middle" src="{{image}}">
+                <span class="drawerz" style="">{{name}}</span></a>
+          </div>
+          {{/each}}
+    </div>
+    <div>
+      <a href="settings">
+        <img class="img-responsive" id="help" src="images/help.png"/>
+      </a>
+    </div>
+</div>
+</div>
+</body>
+
+<script type="text/javascript">
+//var url = require('url');
+//var url_parts = url.parse(request.url, true);
+
+var path_array = window.location.href.split('?q=');
+var query = path_array[path_array.length - 1]
+console.log(path_array);
+console.log(query);
+</script>
+
+<script src="/js/searchbar.js"></script>
+</html>
