@@ -53,13 +53,25 @@ $(document).ready(function() {
 
     // use post so name and password can be passed in
     // Problem: For a brief moment, will display the invalid credentials message
-    $.post("/user/login", namepw, function()
+    var valid = $.post("/user/login", namepw, function()
     {
       console.log("Making sure");
       animateSignIn();
-      return;
+      return true;
     });
-
+    if(!valid) 
+    {
+      valid = $.post("/club/login", namepw, function()
+      {
+        animateSignIn();
+        return true;
+      });
+      if(!valid)
+      {
+        $("#status").html("Invalid credentials. Please try again.");
+        $("#status").css("padding-top", "1.6rem");
+      }
+    };
     /* control structure to check signin, replaced by above code */
     /*  valid = $.get("/json/users.json", function(data){
       var users = data.users;
@@ -73,8 +85,7 @@ $(document).ready(function() {
       }
     });*/
 
-    $("#status").html("Invalid credentials. Please try again.");
-    $("#status").css("padding-top", "1.6rem");
+
 
 
     /* I have no idea what this does */
