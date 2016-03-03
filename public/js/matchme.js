@@ -1,4 +1,5 @@
 $('a[href*=#]').click(function(){
+  ga("send", "pageview", "matchme");
   return false;
 });
   
@@ -73,6 +74,7 @@ var App = {
   blocked: false,
   like: function(liked){
     var animate = liked ? 'animateYes' : 'animateNo';
+    ga("send", "event", 'matchme', 'clicked');
     added[ind] = liked ? true : false;
     if(added[ind] == true) {
       hasAdded++;
