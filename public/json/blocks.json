@@ -1,94 +1,59 @@
 {
-    "clubs": {
-        "Academic": [
-            {
-                "image": "images/salsa.png"
-            }
-        ],
-        "Co-Ops & Enterprise": [
-            {
-                "image": "images/salsa.png"
-            }
-        ],
-        "Cultural": [
-            {
-                "image": "images/salsa.png"
-            }
-        ],
-        "Dance": [
-            {
-                "image": "images/salsa.png"   
-            }
-        ],
-        "Educational": [
-            {
-                "image": "images/salsa.png"
-            }
-        ],
-        "Health Professions": [
-            {
-                "image": "images/salsa.png"
-            }
-        ],
-        "Interfraternity Council (IFC)": [
-            {
-                "image": "images/salsa.png"
-            }
-        ],
-        "Martial Arts": [
-            {
-                "image": "images/salsa.png"
-            }
-        ],
-        "Media": [
-            {
-                "image": "images/salsa.png"
-            }
-        ],
-        "Multi-Cultural Greek Council (MCG) - Fraternity": [
-            {
-                "image": "images/salsa.png"
-            }
-        ],
-        "Multi-Cultural Greek Council (MCG) - Sorority": [
-            {
-                "image": "images/salsa.png"
-            }
-        ],
-        "Panhellenic": [
-            {
-                "image": "images/salsa.png"
-            }
-        ],
-        "Political": [
-            {
-               "image": "images/salsa.png"
-            }
-        ],
-        "Pre-Professional": [
-            {
-                "image": "images/salsa.png"
-            }
-        ],
-        "Service": [
-            {
-                "image": "images/salsa.png"
-            }
-        ],
-        "Social": [
-            {
-                "image": "images/salsa.png"
-            }
-        ],
-        "Spiritual": [
-            {
-                "image": "images/salsa.png"
-            }
-        ],
-        "Student Affirmative Action Committee(SAAC)": [
-            {
-                "image": "images/salsa.png"
-            }
-        ]
+    "clubs": [
+    {
+        "image": "images/salsa.png"
+    },
+    {
+        "image": "images/salsa.png"
+    },
+    {
+        "image": "images/salsa.png"
+    },
+    {
+        "image": "images/salsa.png"
+    },
+    {
+        "image": "images/salsa.png"
+    },
+    {
+        "image": "images/salsa.png"
+    },
+    {
+        "image": "images/salsa.png"
+    },
+    {
+        "image": "images/salsa.png"
+    },
+    {
+        "image": "images/salsa.png"
+    },
+    {
+        "image": "images/salsa.png"
+    },
+    {
+        "image": "images/salsa.png"
+    },
+    {
+        "image": "images/salsa.png"
+    },
+    {
+        "image": "images/salsa.png"
+    },
+    {
+        "image": "images/salsa.png"
+    },
+    {
+        "image": "images/salsa.png"
+    },
+    {
+        "image": "images/salsa.png"
+    },
+    {
+        "image": "images/salsa.png"
+    },
+    {
+        "image": "images/salsa.png"
     }
+    ]
 }
+        

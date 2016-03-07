@@ -35,10 +35,18 @@ var searchresults = require('./routes/searchresults');
 
 var app = express();
 
+var hbs = handlebars.create({
+    // Specify helpers which are only registered on this instance. 
+    helpers: {
+        lookup: function (obj, field) { return obj[field];
+        }
+    }
+});
+
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
-app.engine('handlebars', handlebars());
+app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 app.use(express.favicon());
 app.use(express.logger('dev'));

@@ -45,7 +45,7 @@
               {{#each clubs}}
               <li class="drawer">
                   <a href="categories/{{@key}}">
-                    <p class="drawer-handle" >{{@key}}</p>
+                    <p class="drawer-handle" style="background-image:url({{#with (lookup ../blocks @index)}}{{image}}{{/with}})">{{@key}}</p>
                   </a>
               </li>
               {{/each}}
