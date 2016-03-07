@@ -12,39 +12,52 @@ var clubs = {
   people: [
     {
       name: 'Salsa Dancing',
-      img: "http://www.dancesf.com/dancing/albany-salsa-dance.jpg"
+      img: "http://www.dancesf.com/dancing/albany-salsa-dance.jpg",
+      img2: "http://www.hercampus.com/sites/default/files/styles/full_width_embed/public/2014/01/16/cuban-salsa.jpg?itok=9qzGclmo",
+      url: "/categories/Dance/14/Salsa%20Club%20at%20the%20University%20of%20California%20San%20Diego"
     },
     {
       name: 'Fashion',
-      img: "http://cdn.fashionmagazine.com/wp-content/uploads/2015/05/Fashion-Magazine-Summer-2015-Ashley-Benson-733x1000.jpg"
+      img: "http://cdn.fashionmagazine.com/wp-content/uploads/2015/05/Fashion-Magazine-Summer-2015-Ashley-Benson-733x1000.jpg",
+      img2: "https://scontent-lax3-1.xx.fbcdn.net/hprofile-xlf1/v/t1.0-1/p320x320/12743591_944853835569221_2950470495359466512_n.jpg?oh=360802b405e27fafadc4a822cd062e2f&oe=575B4F7A",
+      url: "/categories/Media/0/Fashion%20Quarterly%20Magazine"
     },
     {
       name: 'Figure Skating',
-      img: "http://wethepeopleofct.org/wp-content/uploads/2016/01/18.jpg"
+      img: "http://wethepeopleofct.org/wp-content/uploads/2016/01/18.jpg",
+      img2: "https://scontent-lax3-1.xx.fbcdn.net/hprofile-xaf1/v/t1.0-1/c53.0.320.320/p320x320/1450922_1612570255638938_8042081251422997107_n.jpg?oh=e18a2770d82c58190167719072ee6764&oe=57966B12",
+      url: "/categories/Social/20/Figure%20Skating%20@%20UCSD"
     },
     {
       name: 'Comic Books',
-      img: "http://www.getcashforcomics.com/media/images/common/comics.png"
+      img: "http://www.getcashforcomics.com/media/images/common/comics.png",
+      img2: "http://static.tumblr.com/utashei/32Qmhu8ig/577309_3663932231300_272403598_n.jpg",
+      url: "/categories/Social/13/Comicbook%20Club%20at%20UCSD"
     },
     {
       name: 'Gaming',
-      img: "http://hfwireless.com/wp-content/uploads/2012/01/game-console-repair-anchorage-300x297.jpg"
+      img: "http://hfwireless.com/wp-content/uploads/2012/01/game-console-repair-anchorage-300x297.jpg",
+      img2: "http://www.keenthemes.com/preview/metronic/theme/assets/global/plugins/jcrop/demos/demo_files/image1.jpg",
     },
     {
       name: 'Archery',
-      img: "http://www.getactivelondon.com/image-cache/image-441-orig.jpg"
+      img: "http://www.getactivelondon.com/image-cache/image-441-orig.jpg",
+      img2: "http://www.keenthemes.com/preview/metronic/theme/assets/global/plugins/jcrop/demos/demo_files/image1.jpg"
     },
     {
       name: 'Student Government',
-      img: "http://stanforddaily.wpengine.netdna-cdn.com/wp-content/uploads/2016/01/SLIDER.011315.Senate-272x272.jpg"
+      img: "http://stanforddaily.wpengine.netdna-cdn.com/wp-content/uploads/2016/01/SLIDER.011315.Senate-272x272.jpg",
+      img2: "http://www.keenthemes.com/preview/metronic/theme/assets/global/plugins/jcrop/demos/demo_files/image1.jpg"
     },
     {
       name: 'Volunteering',
-      img: "http://www.projects-abroad.org/_photos/projects/medicine-and-healthcare/medicine/kenya/female-intern-practicing-medicine.jpg"
+      img: "http://www.projects-abroad.org/_photos/projects/medicine-and-healthcare/medicine/kenya/female-intern-practicing-medicine.jpg",
+      img2: "http://www.keenthemes.com/preview/metronic/theme/assets/global/plugins/jcrop/demos/demo_files/image1.jpg"
     },
     {
       name: 'Cycling',
-      img: "http://www.hickorywellcrafted.com/live/wp-content/uploads/2010/12/1047mountain_biking.jpg"
+      img: "http://www.hickorywellcrafted.com/live/wp-content/uploads/2010/12/1047mountain_biking.jpg",
+      img2: "http://www.keenthemes.com/preview/metronic/theme/assets/global/plugins/jcrop/demos/demo_files/image1.jpg"
     }
   ],   
   add: function(){
@@ -80,7 +93,7 @@ var App = {
       hasAdded++;
       console.log("hA"+hasAdded);
       //console.log(clubs.people[ind]["img"]);
-      var toAdd = "<a href='#'><img style='width:150px; padding:1rem; text-align:center; display:block' class='img-responsive' src='" + clubs.people[ind]["img"] + "''></a>";
+      var toAdd = "<a href='" + clubs.people[ind]["url"] + "'><img style='width:160px; padding:1rem; column-count:2; class='img-responsive' src='" + clubs.people[ind]["img2"] + "''></a>";
       //var toAdd = "<a href='" + data.match[ind]["url"] + "'>" + "<img style='width:150px; padding:1rem; text-align:center; display:block' class='img-responsive' src='" + data.match[ind]["image2"] + "''></a>";
       $(".bookmarked").append("<div>" + toAdd +"</div>");
     }

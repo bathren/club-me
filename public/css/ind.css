@@ -347,3 +347,7 @@ input, button {
   /* Colors are in hexadecimal: http://www.colorpicker.com/ */  
   color: #CC00AA;
 }
+
+.alert {
+  display: none;
+}

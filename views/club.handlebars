@@ -26,7 +26,7 @@
     <div class="container">
       <div class="myInfo">
         <div>
-          <img class="img-responsive" id ="image" src="{{baseUrl}}/{{jsonKey.image}}"/></div>
+          <img class="img-responsive" id ="image" src="{{jsonKey.image}}"/></div>
           <p id="name">{{jsonKey.name}}</p>
           <!--<p id="info">{{jsonKey.info}}</p>-->
           <div><p id="descrip">{{jsonKey.desc}}</p></div>
@@ -49,14 +49,29 @@
      
     <div class="bookmark">
       <a href="#" id="button">
-        <span>Bookmark Club</span>
+        <span id="bookmark">Bookmark Club</span>
       </a>
     </div>
+
+    <a href="/message" id="message1">
+      <div class="message">
+        <span id="bookmark">Message Club</span>
+      </div>
+    </a>
       
     
 </div>
 </body>
-<script>
-</script>
+
 <script src="/js/searchbar.js"></script>
+<script>
+document.getElementById('button').onclick = (function() {
+    event.preventDefault();  
+    document.getElementByIDName('bookmark')[0].innerHTML = 'Success!';
+});
+
+document.getElementById('message').onclick = (function() {
+    event.preventDefault();  
+});
+</script>
 </html>

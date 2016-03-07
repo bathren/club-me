@@ -56,4 +56,10 @@
     
 </div>
 <script src="/js/searchbar.js"></script>
+<script>
+document.getElementById('button').onclick = (function() {
+    event.preventDefault();  
+    document.getElementByIDName('bookmark')[0].innerHTML = 'Success!';
+});
+</script>
 </html>

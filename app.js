@@ -27,6 +27,7 @@ var signup = require('./routes/signup');
 var club = require('./routes/club');
 var categories = require('./routes/categories');
 var category = require('./routes/category')
+var message = require('./routes/message')
 
 var searchresults = require('./routes/searchresults');
 // Example route
@@ -75,6 +76,7 @@ app.get('/phc', phc.view);
 app.get('/categories', categories.view);
 app.get('/categories/:category', category.view);
 app.get('/categories/:category/:id/:name', club.view);
+app.get('/message', message.view);
 
 app.get('/searchresults', searchresults.view);
 
