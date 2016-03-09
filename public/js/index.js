@@ -58,7 +58,7 @@ $(document).ready(function() {
         }
       }
       $("#status").html("Invalid credentials. Please try again.");
-      $("#status").css("padding-top", "1.6rem");
+      $("#status").css("padding-top", "1.1rem");
     });
 
     /* I have no idea what this does */
