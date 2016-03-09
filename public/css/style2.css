@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 #head {
   text-align: center; 
   font-family:"Fira Sans"; 
-  font-weight: lighter; 
+  font-weight: normal;
   font-size: 4rem;
   margin-top: 20px;
   }
