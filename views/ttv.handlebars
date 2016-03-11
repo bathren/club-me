@@ -10,6 +10,7 @@
   <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
   <link href="/css/introHCI.css" rel="stylesheet">
   <link href='https://code.cdn.mozilla.net/fonts/fira.css' rel='stylesheet' type='text/css' />
+  
   <!-- this is a comment in HTML -->
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -22,44 +23,118 @@
 
   <body>
 
-  	<div id="page-content">
-  		
-  		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
-  		<!-- p means paragraph -->
-  	</div>
-  	<div class="container">
-  		<div class="myInfo">
-  			<div>
-  				<img class="img-responsive" id ="image" src="images/tritontv.jpg"/></div>
-  				<p id="name">Triton Television</p>
-  				<p id="info">Broadcasting & Media Production</p>
-          <div><p>At over 50 members, Triton TV boasts a diverse roster of students from all campus colleges and across a variety of majors. Our members are encouraged to hone their skills in all walks of media production including, Directing, Editing, Producing, Cinematography, Sound Design, Lighting Design, Screenwriting, Motion Graphics, Broadcast Journalism, and Live Event Management.</p></div>
+    <div class="container">
+      <div class="myInfo">
+        <div>
+          <img class="img-responsive" id ="image" src="images/tritontv.jpg"/></div>
+          <p id="name">Triton TV</p>
+          <!--<p id="info">{{jsonKey.info}}</p>-->
+          <div><p id="descrip">At over 50 members, Triton TV boasts a diverse roster of students from all campus colleges and across a variety of majors. Our members are encouraged to hone their skills in all walks of media production including, Directing, Editing, Producing, Cinematography, Sound Design, Lighting Design, Screenwriting, Motion Graphics, Broadcast Journalism, and Live Event Management.</p></div>
           <div>
-        <a href="https://www.facebook.com/tritontv/">
-        <img class ="icon" src="images/facebook.png"/></a>
-        <a href="https://www.instagram.com/tritontelevision/">
-        <img class ="icon"src="images/instagram.png"/>
-        </a>
-        <a href="http://www.tritontelevision.com">
-        <img class ="icon"src="images/chrome.png"/>
-        </a></div>
-  		</div>
-
-     <div class="bookmark">  
-     <a href="#" id="button">
-      <span>Bookmark Club</span>
+            <a href="https://www.facebook.com/tritontv/">
+            <img class ="icon" src="{{baseUrl}}/images/facebook.png"/></a>
+            <a href="http://www.tritontelevision.com">
+            <img class ="icon"src="{{baseUrl}}/images/web.png"/>
+            </a>
+        </div>
+      </div>
+     
+    <div class="bookmark">
+      <a href="#" id="button">
+        <span id="bookmark">Bookmark Club</span>
       </a>
     </div>
 
+      <div class="message" onclick="div_show()">
+    <a id="message1">
       
-      
+        <span id="bookmark">Message Club</span>
+    
+    </a>
+      </div>
+
+<div id="abc">
+<!-- Popup Div Starts Here -->
+<div id="popupContact">
+<!-- Contact Us Form -->
+<form action="#" id="formc" method="post" name="form">
+<img id="close" src="/images/x.png" onclick ="div_hide()">
+<h2 id="contact">CONTACT US</h2>
+<hr>
+  <input class="contact" type="text" />
+  <span class="attr">name</span>
+  <input class="contact" class="focus-control" type="text" />
+  <span class="attr">email</span>
+  <input class="contact" class="focus-control" type="text" />
+  <span class="attr">subject</span>
+  <textarea class="focus-control">
+  </textarea>
+  <span class="attr">message</span>
+<a href="#0" class="cd-popup-trigger" id="submit">SEND</a>
+
+<div class="cd-popup" role="alert">
+  <div class="cd-popup-container">
+    <p id="sent">Message Sent!<img id="send" src="/images/sent.png"></p>
+  </div> <!-- cd-popup-container -->
+</div> <!-- cd-popup -->
+</form>
+</div>
+<!-- Popup Div Ends Here -->
+</div>
+  
     
 </div>
+</body>
+
 <script src="/js/searchbar.js"></script>
+<script>
+jQuery(document).ready(function($){
+  //open popup
+  $('.cd-popup-trigger').on('click', function(event){
+    event.preventDefault();
+    $('.cd-popup').addClass('is-visible');
+  });
+  
+  //close popup
+  $('.cd-popup').on('click', function(event){
+    if( $(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') ) {
+      event.preventDefault();
+      $(this).removeClass('is-visible');
+    }
+  });
+  //close popup when clicking the esc keyboard button
+  $(document).keyup(function(event){
+      if(event.which=='27'){
+        $('.cd-popup').removeClass('is-visible');
+      }
+    });
+});
+</script>
 <script>
 document.getElementById('button').onclick = (function() {
     event.preventDefault();  
     document.getElementByIDName('bookmark')[0].innerHTML = 'Success!';
 });
+
+document.getElementById('message').onclick = (function() {
+    event.preventDefault();  
+});
 </script>
+<script>
+function check_empty() {
+  if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") {
+  alert("Fill All Fields !");
+} else {
+  document.getElementById('submit').submit();
+  alert("Form Submitted Successfully...");
+}
+}
+//Function To Display Popup
+function div_show() {
+  document.getElementById('abc').style.display = "block";
+}
+//Function to Hide Popup
+function div_hide(){
+  document.getElementById('abc').style.display = "none";
+}</script>
 </html>

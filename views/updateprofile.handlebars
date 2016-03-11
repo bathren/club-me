@@ -21,10 +21,6 @@
 </head>
 
 <body>
-   <div class="cont">
-    <div class="demo">
-    <div class="login">
-    <div class="app">
     
        <div id="categories">
         <div class="styled">
@@ -38,11 +34,12 @@
         </div>
         <div class="form-group">
           <div class="col-sm-offset-2 col-sm-10">
-            <input type="button" id="edit" class="btn btn-default" value="Edit"></input>
-            <div class="alert alert-success alert-dismissable">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-              Success! A confirmation email was sent to your new email.
-            </div>
+            <input type="button" id="submit" class="cd-popup-trigger" value="Edit"></input>
+            <div class="cd-popup" role="alert">
+            <div class="cd-success-container">
+             <p id="sent">Success!</p>
+             </div> <!-- cd-popup-container -->
+            </div> <!-- cd-popup -->
           </div>
         </div>
 
@@ -60,7 +57,7 @@
         </div>
         <div class="form-group">
           <div class="col-sm-offset-2 col-sm-10">
-            <input type="button" class="btn btn-default" value="Confirm"></input>
+            <input type="button" id="submit" class="cd-popup-trigger" value="Confirm"></input>
           </div>
         </div>
 
@@ -85,17 +82,13 @@
        
        <div style="padding-bottom:3rem" class="form-group">
           <div class="col-sm-offset-2 col-sm-10">
-            <input type="button" class="btn btn-default" value="Change"></input>
+            <input type="button" id="submit" class="cd-popup-trigger" value="Change"></input>
           </div>
         </div>
       </form>
 
           </div>
         </div>
-</div>
-  </div>
- </div>
-</div>
 
 
      
@@ -114,6 +107,29 @@
 
    
    <script src="https://code.jquery.com/jquery.js"></script>
+   <script>
+jQuery(document).ready(function($){
+  //open popup
+  $('.cd-popup-trigger').on('click', function(event){
+    event.preventDefault();
+    $('.cd-popup').addClass('is-visible');
+  });
+  
+  //close popup
+  $('.cd-popup').on('click', function(event){
+    if( $(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') ) {
+      event.preventDefault();
+      $(this).removeClass('is-visible');
+    }
+  });
+  //close popup when clicking the esc keyboard button
+  $(document).keyup(function(event){
+      if(event.which=='27'){
+        $('.cd-popup').removeClass('is-visible');
+      }
+    });
+});
+</script>
 
    <script>
    $(document).ready(function(){

@@ -3,7 +3,6 @@
 
 <html>
 <head>
-  {{> a9exper}}
   <title>clubMe</title> 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,31 +26,23 @@
 
       <![endif]-->    
 
-       {{> googleAnalytics}}
         <script src="js/prefixfree.min.js"></script>      
     </head>
 
     <body>
 
-  <div class="cont">
-    <div class="demo">
-    <div class="login">
-    <div class="app">
    <div id="categories">
         <div class="styled">
+          <h2>Categories</h2>
           <div class="drawers-wrapper">
               
               <ul class="drawers" style="list-style-type:none">
               {{#each clubs}}
               <li class="drawer">
-                  <a href="categories/{{@key}}">
-                    <p class="drawer-handle" style="background-image:url({{#with (lookup ../blocks @index)}}{{image}}{{/with}})">{{@key}}</p>
-                  </a>
+                  <a href="categories/{{@key}}"><p class="drawer-handle" >{{@key}}</p></a>
               </li>
               {{/each}}
-            
-                
-              </ul>
+             
 
 
 
@@ -60,12 +51,8 @@
 
       </div>
     </div>
-  </div>
- </div>
-</div>
-    </div>
-  </div>
-</div>
+
+
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
@@ -81,4 +68,3 @@
 
 
 </html>
-

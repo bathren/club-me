@@ -9,7 +9,14 @@ html, body {
   font-weight: lighter;
   font-size: 62.5%;
   height: 100%;
-  overflow: hidden;
+  background: rgba(39,53,74,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(39,53,74,1) 0%, rgba(0,0,0,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(39,53,74,1)), color-stop(100%, rgba(0,0,0,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(39,53,74,1) 0%, rgba(0,0,0,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(39,53,74,1) 0%, rgba(0,0,0,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(39,53,74,1) 0%, rgba(0,0,0,1) 100%);
+background: radial-gradient(ellipse at center, rgba(39,53,74,1) 0%, rgba(0,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#27354a', endColorstr='#000000', GradientType=1 );
 }
 @media (max-width: 768px) {
   html, body {
@@ -37,68 +44,42 @@ input, button {
   outline: none;
   border: none;
 }
-
 .cont {
   position: relative;
   height: 100%;
-  background-image: url("/images/geisell.jpg");
-  background-size: cover;
   overflow: auto;
   font-family: "Fira Sans";
 }
 
-.sign {
+.login {
   position: absolute;
   width:100%;
-  height: 100%;
-  opacity: 0.9;
-background: rgba(39,53,74,1);
-background: -moz-radial-gradient(center, ellipse cover, rgba(39,53,74,1) 0%, rgba(0,0,0,1) 100%);
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(39,53,74,1)), color-stop(100%, rgba(0,0,0,1)));
-background: -webkit-radial-gradient(center, ellipse cover, rgba(39,53,74,1) 0%, rgba(0,0,0,1) 100%);
-background: -o-radial-gradient(center, ellipse cover, rgba(39,53,74,1) 0%, rgba(0,0,0,1) 100%);
-background: -ms-radial-gradient(center, ellipse cover, rgba(39,53,74,1) 0%, rgba(0,0,0,1) 100%);
-background: radial-gradient(ellipse at center, rgba(39,53,74,1) 0%, rgba(0,0,0,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#27354a', endColorstr='#000000', GradientType=1 );
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  margin-top: 6.5rem;
 }
 
-.demo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -15rem;
-  margin-top: -26.5rem;
-  width: 30rem;
-  height: 53rem;
-  overflow: hidden;
+.list {
+  position: relative;
+  background: rgba(44,55,64,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(44,55,64,1) 0%, rgba(0,0,0,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(44,55,64,1)), color-stop(100%, rgba(0,0,0,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(44,55,64,1) 0%, rgba(0,0,0,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(44,55,64,1) 0%, rgba(0,0,0,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(44,55,64,1) 0%, rgba(0,0,0,1) 100%);
+background: radial-gradient(ellipse at center, rgba(44,55,64,1) 0%, rgba(0,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c3740', endColorstr='#000000', GradientType=1 );
+  border: 2px #202c3e solid;
+  width:100%;
+  padding-top: 1.2rem;
+  padding-bottom:0.1rem;
+  padding-left: 8rem;
+  text-align: left;
 }
 
-.app {
-  overflow: scroll;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-transition: opacity 0.1s, -webkit-transform 0.3s cubic-bezier(0.68, -0.45, 0.465, 1.25);
-  transition: opacity 0.1s, -webkit-transform 0.3s cubic-bezier(0.68, -0.45, 0.465, 1.25);
-  transition: opacity 0.1s, transform 0.3s cubic-bezier(0.68, -0.45, 0.465, 1.25);
-  transition: opacity 0.1s, transform 0.3s cubic-bezier(0.68, -0.45, 0.465, 1.25), -webkit-transform 0.3s cubic-bezier(0.68, -0.45, 0.465, 1.25);
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
- background: rgba(39,53,74,1);
-background: -moz-radial-gradient(center, ellipse cover, rgba(39,53,74,1) 0%, rgba(0,0,0,1) 100%);
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(39,53,74,1)), color-stop(100%, rgba(0,0,0,1)));
-background: -webkit-radial-gradient(center, ellipse cover, rgba(39,53,74,1) 0%, rgba(0,0,0,1) 100%);
-background: -o-radial-gradient(center, ellipse cover, rgba(39,53,74,1) 0%, rgba(0,0,0,1) 100%);
-background: -ms-radial-gradient(center, ellipse cover, rgba(39,53,74,1) 0%, rgba(0,0,0,1) 100%);
-background: radial-gradient(ellipse at center, rgba(39,53,74,1) 0%, rgba(0,0,0,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#27354a', endColorstr='#000000', GradientType=1 );
-  -webkit-transform: scale(1);
-          transform: scale(1);
+#second {
+  display: inline-block;
 }
+
+
 .app.active {
   opacity: 1;
   -webkit-transform: scale(1);
@@ -119,9 +100,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#27354a', end
 }
 .app__top {
   position: relative;
-  width: 30rem;
-  height: 53rem;
-  padding: 4rem 1.5rem 2rem;
+  width:100%;
   text-align: center;
 }
 
@@ -181,11 +160,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#27354a', end
 }
 .app__iconz {
   position: relative;
-  display: inline-block;
-  width: 5rem;
-  height: 5rem;
+  vertical-align: middle;
+  width: 4rem;
+  height: 4rem;
   margin-bottom: 1rem;
   color: #fff;
+  text-align: left;
 }
 .app__user-photo {
   width: 100%;
@@ -206,48 +186,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#27354a', end
   font-size: 1.5rem;
 }
 .app__logout {
-  float: right;
-  margin-bottom: 1.2rem;
-  width: 4.6rem;
-  height: 4.6rem;
-  margin-right: 0.2rem;
-  background: #000;
-  color: #fff;
-  font-size: 2rem;
-  border-radius: 50%;
-  cursor: pointer;
-  -webkit-transition: bottom 0.4s 0.1s, right 0.4s 0.1s, opacity 0.1s 0.7s, background-color 0.1s 0.7s, -webkit-transform 0.4s 0.4s;
-  transition: bottom 0.4s 0.1s, right 0.4s 0.1s, opacity 0.1s 0.7s, background-color 0.1s 0.7s, -webkit-transform 0.4s 0.4s;
-  transition: bottom 0.4s 0.1s, right 0.4s 0.1s, transform 0.4s 0.4s, opacity 0.1s 0.7s, background-color 0.1s 0.7s;
-  transition: bottom 0.4s 0.1s, right 0.4s 0.1s, transform 0.4s 0.4s, opacity 0.1s 0.7s, background-color 0.1s 0.7s, -webkit-transform 0.4s 0.4s;
-}
-.app__logout.clicked {
-  bottom: 50%;
-  right: 50%;
-  -webkit-transform: scale(30) !important;
-          transform: scale(30) !important;
-  opacity: 0.9;
-}
-.app__logout.clicked svg {
-  opacity: 0;
-}
-.app__logout-icon {
   position: absolute;
-  width: 3rem;
-  height: 3rem;
-  top: 131.4%;
-  left: 81.8%;
-  -webkit-transition: opacity 0.1s;
-  transition: opacity 0.1s;
+  top:-9%;
+  right: 2.5%;
+  width:6%;
 }
-.app__logout-icon path {
-  stroke-width: 4px;
-  stroke-dasharray: 64.36235046386719;
-  stroke-dashoffset: 64.36235046386719;
-  -webkit-animation: animatePath 0.5s 0.5s forwards;
-          animation: animatePath 0.5s 0.5s forwards;
-}
-
 .ripple {
   position: absolute;
   width: 15rem;
@@ -307,12 +250,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#27354a', end
   line-height: 90%;
 }
 #categories {
-     font-size: 1.5rem;
+     font-size: 2.5rem;
      font-family: "Fira Sans";
      font-weight: lighter;
      font-color: #fff;
-     text-align: center;
-     padding-bottom: 1rem;
+     text-align: left;
+     padding-left: 1rem;
+}
+
+#categories, #categories:hover, #categories:active, #categories:visited {
+    text-decoration:none;
 }
 
 .clicked {
