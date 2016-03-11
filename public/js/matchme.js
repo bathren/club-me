@@ -18,13 +18,13 @@ var clubs = {
     },
     {
       name: 'Fashion',
-      img: "http://cdn.fashionmagazine.com/wp-content/uploads/2015/05/Fashion-Magazine-Summer-2015-Ashley-Benson-733x1000.jpg",
+      img: "http://media1.popsugar-assets.com/files/2014/10/28/820/n/1922564/eee82e3d7f602c0a_thumb_temp_cover_file157415051413560509.xxxlarge/i/November-2014-Fashion-Magazine-Covers-Pictures.jpg",
       img2: "https://scontent-lax3-1.xx.fbcdn.net/hprofile-xlf1/v/t1.0-1/p320x320/12743591_944853835569221_2950470495359466512_n.jpg?oh=360802b405e27fafadc4a822cd062e2f&oe=575B4F7A",
       url: "/categories/Media/0/Fashion%20Quarterly%20Magazine"
     },
     {
       name: 'Figure Skating',
-      img: "http://wethepeopleofct.org/wp-content/uploads/2016/01/18.jpg",
+      img: "http://www.self.com/wp-content/uploads/2014/02/Gracie-Gold-Olympic-Ice-Skater-Thumb.jpg",
       img2: "https://scontent-lax3-1.xx.fbcdn.net/hprofile-xaf1/v/t1.0-1/c53.0.320.320/p320x320/1450922_1612570255638938_8042081251422997107_n.jpg?oh=e18a2770d82c58190167719072ee6764&oe=57966B12",
       url: "/categories/Social/20/Figure%20Skating%20@%20UCSD"
     },
@@ -37,27 +37,32 @@ var clubs = {
     {
       name: 'Gaming',
       img: "http://hfwireless.com/wp-content/uploads/2012/01/game-console-repair-anchorage-300x297.jpg",
-      img2: "http://www.keenthemes.com/preview/metronic/theme/assets/global/plugins/jcrop/demos/demo_files/image1.jpg",
+      img2: "https://scontent-lax3-1.xx.fbcdn.net/hprofile-xpa1/v/t1.0-1/p320x320/12195852_1685632854993056_3417779830433417805_n.png?oh=3bb98a2d5cea5a12b09e95bb133aa47d&oe=57912D58",
+      url: "/categories/Social/60/Triton%20Gaming"
+    }, 
+    {
+      name: 'Art',
+      img: "http://www.thearsenalsj.com/wp-content/uploads/bb-plugin/cache/pensweb-1003x1024-circle.jpg",
+      img2: "https://scontent-lax3-1.xx.fbcdn.net/hphotos-xft1/t31.0-8/11845238_1711184679109602_4786968587438871709_o.jpg",
+      url: "/categories/Educational/34/Triton%20Art"
     },
     {
-      name: 'Archery',
-      img: "http://www.getactivelondon.com/image-cache/image-441-orig.jpg",
-      img2: "http://www.keenthemes.com/preview/metronic/theme/assets/global/plugins/jcrop/demos/demo_files/image1.jpg"
-    },
-    {
-      name: 'Student Government',
-      img: "http://stanforddaily.wpengine.netdna-cdn.com/wp-content/uploads/2016/01/SLIDER.011315.Senate-272x272.jpg",
-      img2: "http://www.keenthemes.com/preview/metronic/theme/assets/global/plugins/jcrop/demos/demo_files/image1.jpg"
+      name: 'Musicals',
+      img: "http://gracelutheran.com/wp-content/uploads/2012/12/MusicNotes1.jpg",
+      img2: "https://scontent-lax3-1.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/11143535_817165695018393_4160957329934145811_n.png?oh=2b49e06503b7bb1940bcb41df9faaffa&oe=575DAA8F",
+      url: "/categories/Social/38/Muir%20Musical"
     },
     {
       name: 'Volunteering',
       img: "http://www.projects-abroad.org/_photos/projects/medicine-and-healthcare/medicine/kenya/female-intern-practicing-medicine.jpg",
-      img2: "http://www.keenthemes.com/preview/metronic/theme/assets/global/plugins/jcrop/demos/demo_files/image1.jpg"
+      img2: "https://scontent-lax3-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/321539_276868168992205_281859461_n.jpg?oh=c642249c07b46727a0a210e41e8f1d8f&oe=57575645",
+      url:"/categories/Educational/27/Student%20Health%20Advocates"
     },
     {
-      name: 'Cycling',
-      img: "http://www.hickorywellcrafted.com/live/wp-content/uploads/2010/12/1047mountain_biking.jpg",
-      img2: "http://www.keenthemes.com/preview/metronic/theme/assets/global/plugins/jcrop/demos/demo_files/image1.jpg"
+      name: 'Running',
+      img: "http://www.womenshealthmag.com/sites/womenshealthmag.com/files/images/1103-woman-running.jpg",
+      img2: "https://scontent-lax3-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/253705_215162168516494_6279707_n.jpg?oh=3f88cbaf60272906bee86e02fd1d2164&oe=5797281A",
+      url: "/categories/Social/54/Strides%20Running%20Club"
     }
   ],   
   add: function(){

@@ -78,7 +78,13 @@
   <textarea class="focus-control">
   </textarea>
   <span class="attr">message</span>
-<a href="javascript:%20check_empty()" id="submit">SEND</a>
+<a href="#0" class="cd-popup-trigger" id="submit">SEND</a>
+
+<div class="cd-popup" role="alert">
+  <div class="cd-popup-container">
+    <p id="sent">Message Sent!<img id="send" src="/images/sent.png"></p>
+  </div> <!-- cd-popup-container -->
+</div> <!-- cd-popup -->
 </form>
 </div>
 <!-- Popup Div Ends Here -->
@@ -90,6 +96,29 @@
 </body>
 
 <script src="/js/searchbar.js"></script>
+<script>
+jQuery(document).ready(function($){
+  //open popup
+  $('.cd-popup-trigger').on('click', function(event){
+    event.preventDefault();
+    $('.cd-popup').addClass('is-visible');
+  });
+  
+  //close popup
+  $('.cd-popup').on('click', function(event){
+    if( $(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') ) {
+      event.preventDefault();
+      $(this).removeClass('is-visible');
+    }
+  });
+  //close popup when clicking the esc keyboard button
+  $(document).keyup(function(event){
+      if(event.which=='27'){
+        $('.cd-popup').removeClass('is-visible');
+      }
+    });
+});
+</script>
 <script>
 document.getElementById('button').onclick = (function() {
     event.preventDefault();  

@@ -46,9 +46,7 @@ input, button {
 .cont {
   position: relative;
   height: 100%;
-  background: #31373a;
-  background-image: url("/images/geisel.jpg");
-  background-size: cover;
+  background: #0e1115;
   overflow: auto;
   font-family: "Fira Sans";
 }
@@ -345,11 +343,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#27354a', end
 }
 .app__iconz {
   position: relative;
-  display: inline-block;
-  width: 5rem;
-  height: 5rem;
+  vertical-align: middle;
+  width: 4rem;
+  height: 4rem;
   margin-bottom: 1rem;
   color: #fff;
+  text-align: left;
 }
 .app__user-photo {
   width: 100%;
@@ -376,22 +375,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#27354a', end
   font-size: 1.5rem;
 }
 .app__logout {
-  float: right;
-  margin-bottom: 1.2rem;
-  width: 4.6rem;
-  height: 4.6rem;
-  margin-right: 0.2rem;
-  background: #000;
-  color: #fff;
-  font-size: 2rem;
-  border-radius: 50%;
-  cursor: pointer;
-  -webkit-transition: bottom 0.4s 0.1s, right 0.4s 0.1s, opacity 0.1s 0.7s, background-color 0.1s 0.7s, -webkit-transform 0.4s 0.4s;
-  transition: bottom 0.4s 0.1s, right 0.4s 0.1s, opacity 0.1s 0.7s, background-color 0.1s 0.7s, -webkit-transform 0.4s 0.4s;
-  transition: bottom 0.4s 0.1s, right 0.4s 0.1s, transform 0.4s 0.4s, opacity 0.1s 0.7s, background-color 0.1s 0.7s;
-  transition: bottom 0.4s 0.1s, right 0.4s 0.1s, transform 0.4s 0.4s, opacity 0.1s 0.7s, background-color 0.1s 0.7s, -webkit-transform 0.4s 0.4s;
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  position: absolute;
+  top:-9%;
+  right: 2.5%;
+  width:6%;
 }
 .app__logout.clicked {
   bottom: 50%;
@@ -481,12 +468,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#27354a', end
   line-height: 90%;
 }
 #categories {
-     font-size: 1.5rem;
+     font-size: 2.5rem;
      font-family: "Fira Sans";
      font-weight: lighter;
      font-color: #fff;
-     text-align: center;
-     padding-bottom: 1rem;
+     text-align: left;
+     padding-bottom: -4rem;
+     padding-left: 1.5rem;
 }
 
 .clicked {
@@ -525,5 +513,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#27354a', end
 .example-class-selector p {
   /* Colors are in hexadecimal: http://www.colorpicker.com/ */  
   color: #CC00AA;
+}
+.list {
+  position: relative;
+  width:100%;
+  padding-top: 3rem;
+  padding-left: 6.5rem;
+  text-align: left;
 }
 
